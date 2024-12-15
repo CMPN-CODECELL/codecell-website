@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040b15;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #242424 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0 0 25px 25px !important;
+  background: linear-gradient(
+    transparent 30%,
+    /* rgba(0, 255, 0, 1) 100% */ #f6c31c
+  ) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 25px !important;
+  background: #f6c31c !important;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #f6c31ce5;
+}
+
+::selection {
+  color: var(--secondary);
+  color: white;
+  background: #f6c31ce5;
+}

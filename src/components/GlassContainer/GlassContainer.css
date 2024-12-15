@@ -1,0 +1,11 @@
+.glass-container {
+  position: relative;
+  padding-inline: 2rem;
+  padding: 2rem;
+  background: var(--dark-alpha);
+  border-radius: 25px;
+  height: fit-content;
+  backdrop-filter: blur(6px);
+  border: 2px solid var(--primary-alpha);
+  z-index: 2 !important;
+}

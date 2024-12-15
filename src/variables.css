@@ -1,0 +1,23 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+
+/* Color Pallete */
+* {
+  /* Site variables */
+  --primary: #53430a;
+  --primary: #f6c31c;
+  --primary-alpha: #f6c31c5b;
+  --secondary: #050816;
+  --secondary-alpha: #050816a8;
+  --tertiary: none;
+  --dark: #242424;
+  --dark-alpha: #000000;
+  --dark-alpha: #24242427;
+  --matrix: rgba(45, 40, 62, 0.1);
+
+  /* Toast variables */
+  --toastify-color-dark: var(--secondary);
+}

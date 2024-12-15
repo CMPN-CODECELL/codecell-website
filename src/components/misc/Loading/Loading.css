@@ -1,0 +1,17 @@
+.loading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #040b15;
+}
+
+.loading img {
+  margin: auto;
+  width: 900px;
+}

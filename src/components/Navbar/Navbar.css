@@ -1,0 +1,103 @@
+.codecell-nav {
+  padding-inline: 6rem;
+  height: 12vh !important;
+  font-size: 1.4rem !important;
+  background: var(--dark-alpha) !important;
+  color: white !important;
+  backdrop-filter: blur(5px);
+  font-family: "Press Start 2P", sans-serif;
+  border-bottom: 1px solid var(--primary);
+  /* border-top: 1px solid var(--primary); */
+  font-weight: 100;
+}
+.nav-items-wrapper {
+  justify-content: right;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-title .codecell-logo {
+  width: clamp(3.5rem, 4.75vw, 4.5rem);
+  height: clamp(3.5rem, 4.75vw, 4.5rem);
+}
+
+.navbar-title .vesit-logo {
+  width: clamp(1rem, 10vw, 3rem);
+}
+
+.navbar-title span {
+  color: var(--primary);
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Press Start 2P", sans-serif !important;
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+.navbar-toggler {
+  outline-style: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s ease-out;
+  font-size: 1.3rem;
+}
+
+.nav-item {
+  transition: transform 0.2s ease-out;
+}
+
+.nav-item:hover {
+  transform: translateY(-3px);
+  color: var(--primary) !important;
+}
+
+.nav-item:hover > a {
+  color: var(--primary);
+  /* border-bottom: 3px solid var(--primary); */
+  /* text-decoration: underline; */
+}
+
+@media screen and (max-width: 991px) {
+  .codecell-nav {
+    height: fit-content !important;
+  }
+  .nav-items {
+    padding-right: 1rem;
+    padding-block: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  .codecell-nav {
+    justify-content: space-between !important;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .codecell-nav {
+    padding-inline: 2%;
+  }
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+  .navbar-title img {
+    width: 3.25rem;
+  }
+}

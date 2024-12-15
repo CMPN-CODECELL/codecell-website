@@ -1,0 +1,86 @@
+.footer {
+  /* min-height: 30vh; */
+  background: var(--secondary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  border-top: 1px solid var(--primary);
+  overflow: hidden;
+  font-weight: 100;
+}
+
+.footer-codecell,
+.footer-vesit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Press Start 2P", sans-serif;
+  gap: 1.5rem;
+  font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+  text-wrap: nowrap;
+}
+
+.footer-codecell img {
+  width: clamp(3.5rem, 4.75vw, 4.5rem);
+  height: clamp(3.5rem, 4.75vw, 4.5rem);
+}
+
+.footer-vesit {
+  font-family: "Noto Sans", sans-serif;
+  flex-direction: column;
+}
+
+.vesit-name {
+  font-size: clamp(0.75rem, 3vw, 1.1rem);
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.vesit-name img {
+  width: clamp(1rem, 10vw, 3rem);
+}
+
+.vesit-address {
+  font-weight: 200;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.footer-info {
+  font-family: "Noto Sans", sans-serif;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  font-weight: 400;
+  color: #c0c0c0;
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  transition: transform 0.1s ease-out;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+.footer-socials svg {
+  transition: fill 0.1s ease-in-out;
+}
+
+.footer-socials a:hover svg {
+  fill: var(--primary);
+}
