@@ -5,6 +5,7 @@ import CodecellNav from "../../components/Navbar/Navbar";
 import Card from "../../components/misc/Card/Card";
 import Footer from "../../components/Footer/Footer";
 import Loading from "../../components/misc/Loading/Loading";
+import ScrollToTopButton from "../../components/misc/ScrollToTop/ScrollToTop";
 
 const Team = () => {
   const faculty = [
@@ -364,6 +365,7 @@ const Team = () => {
       </Accordion>
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };

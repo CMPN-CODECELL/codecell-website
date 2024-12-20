@@ -19,7 +19,7 @@
   font-family: "Outfit", sans-serif;
   padding-top: 1rem;
   color: white;
-  font-size: clamp(2rem, 9vh, 4rem);
+  font-size: clamp(2rem, 9vw, 4rem);
   text-align: center;
   display: flex;
   align-items: center;
@@ -115,25 +115,17 @@
 .te-members > .team-title img {
   width: 4rem;
 }
-@media screen and (max-width: 1325px) {
-  .team-cards .card-container {
-    width: 30vh;
+
+/* @media screen and (max-width: 1389px) {
+  .faculty .team-cards {
+    flex-direction: column !important;
   }
+} */
+
+@media screen and (max-width: 1325px) {
   .faculty > .team-cards {
     max-width: 885px;
   }
-}
-
-@media screen and (max-width: 1200px) {
-  /* .meet-the-team span {
-    font-size: 6vw;
-  } */
-}
-
-@media screen and (max-width: 830px) {
-  /* .meet-the-team span {
-    font-size: 9vw;
-  } */
 }
 
 @media screen and (max-width: 490px) {
@@ -143,9 +135,13 @@
   .meet-the-team {
     font-size: clamp(2rem, 10vw, 5rem);
   }
-  /* .meet-the-team span {
-    font-size: clamp(1rem, 8vw, 3rem);
-    width: 100%;
-    justify-content: center;
-  } */
+}
+
+@media screen and (max-width: 420px) {
+  .team-section {
+    padding: 1rem;
+  }
+  .team-wrapper {
+    width: 90vw;
+  }
 }
