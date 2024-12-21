@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import Events from "../../components/Events/Events";
 import ContactUs from "../../components/ContactUs/ContactUs";
 import Matrix from "../../components/MatrixRainingCode/Matrix";
+import ScrollToTopButton from "../../components/misc/ScrollToTop/ScrollToTop";
 
 function Landing() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function Landing() {
         <Events />
         <ContactUs />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </div>
   );

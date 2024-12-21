@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./components/misc/Loading/Loading";
+import ScrollToTopButton from "./components/misc/ScrollToTop/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);

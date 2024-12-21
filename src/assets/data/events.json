@@ -1,0 +1,104 @@
+[
+    {
+      "event-name": "Web Verse",
+      "event-image": "webverse.jpg",
+      "event-desc":
+        "The web development session tailored for second-year students covered HTML, CSS, JavaScript, and more. Participants gained hands-on experience in building responsive designs, adding interactivity, and connecting databases to create dynamic web applications.",
+      "event-time": "Aug 2023",
+      "event-guest": "Codecell Team"
+    },
+    {
+      "event-name": "DSAccelerate",
+      "event-image": "dsaaccelerate.jpg",
+      "event-desc":
+        "The DSA Boot Camp was a 4-week program for TE students, offering in-depth learning of Data Structures and Algorithms through coding challenges, optimization techniques, and algorithmic concepts to enhance problem-solving skills",
+      "event-time": "Aug 2023",
+      "event-guest": "Codecell Team"
+    },
+    {
+      "event-name": "Design Thinking",
+      "event-image": "designthinking.jpg",
+      "event-desc":
+        "CodeCell hosted 'Unleashing Innovation & Creativity Through Design Thinking', led by Dr. Prashant Kanade and the design team. The event explored design thinking and hands-on Figma exercises for creating innovative solutions.",
+      "event-time": "Aug 2023",
+      "event-guest": "Dr. Prashant Kanade"
+    },
+    {
+      "event-name": "Introduction to Open Source",
+      "event-image": "opensource.jpeg",
+      "event-desc":
+        "Hacktoberfest 2023’s grand opening event, 'Intro to Open-Source', covered insights on what open-source is, showcased projects, and highlighted opportunities in the open-source community.",
+      "event-time": "Oct 2023",
+      "event-guest": "Codecell Team"
+    },
+    {
+      "event-name": "GSoC Talk",
+      "event-image": "gsoc.jpg",
+      "event-desc":
+        "The GSoC Talk at VESIT by CodeCell introduced students to Google Summer of Code. The event covered open-source contributions, proposal writing, and GSoC opportunities under the direction of Mr. Savio Dias.",
+      "event-time": "Oct 2023",
+      "event-guest": "Mr. Savio Dias"
+    },
+    {
+        "event-name": "Introduction to Git & Github",
+        "event-image": "introtogithub.jpg",
+      "event-desc":
+        "CodeCell organized a Git and GitHub Workshop at VESIT, introducing students to version control, collaboration, and project management. Participants explored GitHub’s features and learned about open-source contributions.",
+      "event-time": "Oct 2023",
+      "event-guest": "Codecell Team"
+    },
+    {
+      "event-name": "Syrus'24 Hackathon",
+      "event-image": "syrus.jpeg",
+      "event-desc":
+        "The Syrus Hackathon, powered by Devfolio, showcased 250+ students in a 24-hour coding marathon. CodeCell’s flagship event promoted innovation in Web 2.0, Web 3.0, and GenAI.",
+      "event-time": "Feb 2024"
+    },
+    {
+        "event-name": "MERN and Django Workshop",
+        "event-image": "mernanddjango.png",
+        "event-desc": "This one-week internship program focused on Django and full-stack development, giving students a strong foundation in MERN and Django frameworks and enhance their web development skills.",
+        "event-time": "May 2024",
+        "event-guest": "Mr. Richard Joseph, Aditya Mangtani, Hannan Chougle, Latish Advani"
+    },
+    {
+      "event-name": "Career Guidance Series",
+      "event-image": "careerguidance.jpg",
+      "event-desc":
+        "This program gave students a deep understanding of various career paths, offering clear guidance on succeeding in research, excelling at competitive programming, and pursuing higher education abroad.",
+      "event-time": "Aug 2024",
+      "event-guest": "Gaurish Baliga (KJSCE), Vishesh Mittal, Attreyee Mukherjee"
+    },
+    {
+        "event-name": "Entrepreneurship and Innovation",
+        "event-image": "entrepreneurship.jpg",
+        "event-desc": "This program equips aspiring entrepreneurs with the knowledge and strategies to create innovative, sustainable businesses by understanding emerging trends, customer needs, and technological advancements.",
+        "event-time": "Aug 2024",
+        "event-guest": "Aditya Mangtani, Hiten Kataria"
+    },
+    {
+      "event-name": "Generative AI Workshop",
+      "event-image": "genai.jpg",
+      "event-desc":
+        "A workshop about the fundamentals of generative AI to help students understand the technology and implement its applications using platforms like Botpress.",
+      "event-time": "Sept 2024",
+      "event-guest": "Piyush Chugeja, Vedant Pawar"
+    },
+    {
+      "event-name": "DSA Bootcamp",
+      "event-image": "dsabootcamp.png",
+      "event-desc":
+        "The program offered participants an opportunity to master essential Data Structures and Algorithms. Attendees engaged in hands-on contests to reinforce their learning, enhance coding skills, and improve problem-solving abilities.",
+      "event-time": "Oct 2024",
+      "event-guest":
+        "Sadhak Kumar, Chinmay Desai, Sahil Tanwani, Piyush Chugeja, Pankaj Gupta, Jai Bhatia"
+    },
+    {
+      "event-name": "GitHub for Hacktoberfest",
+      "event-image": "git24.jpg",
+      "event-desc":
+        "The workshop covered key concepts of version control, Git, GitHub, and popular open-source events like Hacktoberfest, encouraging students to get involved in the global open-source community.",
+      "event-time": "Oct 2024",
+      "event-guest": "Gautam Rai, Vedika Walhe"
+    }
+  ]

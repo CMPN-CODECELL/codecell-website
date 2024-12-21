@@ -122,12 +122,14 @@ const ContactUs = () => {
             className="contact-form"
             id="contact-form"
           >
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3" controlId="formBasicName">
               <Form.Label className="form-label">Your Name:</Form.Label>
               <Form.Control
                 type="text"
                 className="form-field"
                 placeholder="Enter Name"
+                name="user_name"
+                required={true}
               />
             </Form.Group>
             <br />
@@ -138,11 +140,13 @@ const ContactUs = () => {
                 type="email"
                 className="form-field"
                 placeholder="Enter Email"
+                name="user_email"
+                required={true}
               />
             </Form.Group>
             <br />
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3" controlId="formBasicMessage">
               <Form.Label className="form-label">Your Message:</Form.Label>
               <Form.Control
                 as="textarea"
@@ -150,6 +154,8 @@ const ContactUs = () => {
                 type="text"
                 className="form-field"
                 placeholder="Enter Message"
+                name="user_message"
+                required={true}
               />
             </Form.Group>
             <br />

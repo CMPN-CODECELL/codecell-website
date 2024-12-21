@@ -1,6 +1,7 @@
 .codecell-nav {
   padding-inline: 6rem;
   height: 12vh !important;
+  min-height: 80px;
   font-size: 1.4rem !important;
   background: var(--dark-alpha) !important;
   color: white !important;
@@ -98,6 +99,18 @@
     font-size: 1.2rem;
   }
   .navbar-title img {
-    width: 3.25rem;
+    width: 3.25rem !important;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .codecell-nav {
+    padding-inline: 1% !important;
+  }
+  .navbar-title {
+    font-size: 5vw;
+  }
+  .navbar-title img {
+    width: 15vw !important;
   }
 }
