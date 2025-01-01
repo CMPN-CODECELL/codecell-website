@@ -4,7 +4,7 @@ import "./Matrix.css";
 class Symbol {
   constructor(x, y, fontSize, canvasHeight) {
     this.characters =
-      "カタナイィキチニヒミリヰウクスヌフムユルエケセテネヘメレヱオコソトノホモ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ<>/$@#&*{}~";
+      "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz<>/$@#&*{}~";
     this.x = x;
     this.y = y;
     this.fontSize = fontSize;
@@ -85,12 +85,12 @@ const Matrix = () => {
       const deltaTime = timeStamp - lastTime;
       lastTime = timeStamp;
       if (timer > nextFrame) {
-        ctx.globalCompositeOperation = "source-over"; // Default behavior
-        ctx.fillStyle = "rgba(5, 8, 22, 0.15)"; // Fading effect
+        ctx.globalCompositeOperation = "source-over";
+        ctx.fillStyle = "rgba(5, 8, 22, 0.15)";
         // ctx.fillStyle = "rgba(5, 8, 22, 0.12)";
         ctx.textAlign = "center";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.globalCompositeOperation = "lighter"; // Brighter trail effects
+        ctx.globalCompositeOperation = "lighter";
         ctx.fillStyle = gradient; // "#816710";
         ctx.font = effect.fontSize + "px monospace";
         effect.symbols.forEach((symbol) => symbol.draw(ctx));
