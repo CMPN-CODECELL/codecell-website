@@ -9,12 +9,12 @@ import Loading from "./components/misc/Loading/Loading";
 import ScrollToTopButton from "./components/misc/ScrollToTop/ScrollToTop";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 1500);
-  // }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   return (
     <BrowserRouter>
