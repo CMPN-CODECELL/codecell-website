@@ -4,21 +4,21 @@ import "./Card.css";
 const Card = (props) => {
   const card = props.card;
   return (
-    <div className="card-container">
+    <div className="team-card-container">
       <img
         src={card.photo}
         loading="lazy"
-        className="card-image"
+        className="team-card-image"
         alt={card.name}
       />
-      <div className="card-info-wrapper">
-        <div className="card-text">
-          <div className="card-name">{card.name}</div>
-          <div className="card-desgn">{card.designation}</div>
+      <div className="team-card-info-wrapper">
+        <div className="team-card-text">
+          <div className="team-card-name">{card.name}</div>
+          <div className="team-card-desgn">{card.designation}</div>
         </div>
 
         {card.social && (
-          <div className="card-social">
+          <div className="team-card-social">
             <a href={card.social} target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

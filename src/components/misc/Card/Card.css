@@ -1,4 +1,4 @@
-.card-container {
+.team-card-container {
   position: relative;
   overflow: hidden;
   aspect-ratio: 3 / 4;
@@ -13,16 +13,18 @@
   transition: transform 0.1s ease-out;
 }
 
-.card-image {
-  position: absolute;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
-  transform: translate(-50%, -50%);
+.team-card-image {
+  display: unset;
+  position: absolute !important;
+  height: 100% !important;
+  max-width: unset;
+  top: 50% !important;
+  left: 50% !important;
+  z-index: 0 !important;
+  transform: translate(-50%, -50%) !important;
 }
 
-.card-info-wrapper {
+.team-card-info-wrapper {
   width: 100%;
   height: 40%;
   padding: 1rem;
@@ -39,27 +41,27 @@
   z-index: 2;
 }
 
-.card-text {
+.team-card-text {
   padding-top: 15%;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.card-name {
+.team-card-name {
   position: relative;
   font-size: 1.05rem;
   z-index: 4;
 }
 
-.card-desgn {
+.team-card-desgn {
   width: fit-content;
   position: relative;
   font-size: 0.75rem;
   z-index: 0;
 }
 
-.card-social {
+.team-card-social {
   padding-top: 1rem;
   padding-inline: 0.5rem;
   /* background: var(--secondary-alpha); */
@@ -68,7 +70,7 @@
   position: relative;
 }
 
-.card-social svg {
+.team-card-social svg {
   background-color: white;
   border-radius: 25px;
   overflow: hidden;

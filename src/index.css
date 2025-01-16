@@ -18,10 +18,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0 0 25px 25px !important;
-  background: linear-gradient(
-    transparent 30%,
-    /* rgba(0, 255, 0, 1) 100% */ #f6c31c
-  ) !important;
+  background: linear-gradient(transparent 30%,
+      /* rgba(0, 255, 0, 1) 100% */
+      #f6c31c) !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {

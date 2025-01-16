@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./components/misc/Loading/Loading";
 import ScrollToTopButton from "./components/misc/ScrollToTop/ScrollToTop";
+import Syrus from "./pages/Syrus/Syrus";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={loading ? <Loading /> : <Landing />} />
         <Route path="/team" element={loading ? <Loading /> : <Team />} />
+        <Route path="/syrus" element={loading ? <Loading /> : <Syrus />} />
         <Route path="*" element={<Loading />} />
       </Routes>
       <ToastContainer
