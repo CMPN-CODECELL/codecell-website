@@ -3,12 +3,12 @@ import VESITLogo from "../../assets/VESIT.png";
 
 function SyrusFooter() {
   return (
-    <div className="footer">
-      <div className="footer-codecell">
+    <div className="syrus-footer">
+      <div className="syrus-footer-codecell">
         <img src={CodecellLogo} />
         CodeCell
       </div>
-      <div className="footer-vesit">
+      <div className="syrus-footer-vesit">
         <div className="vesit-name">
           <img src={VESITLogo} />
           Vivekanand Education Society's Institute Of Technology
@@ -19,10 +19,10 @@ function SyrusFooter() {
         </div>
       </div>
 
-      <div className="footer-info">
+      <div className="syrus-footer-info">
         © 2024-2025 CodeCell VESIT. All Rights Reserved.
       </div>
-      <div className="footer-socials">
+      <div className="syrus-footer-socials">
         <a
           href="https://www.linkedin.com/company/vesit-tinkers-codecell-computer-department"
           target="_blank"

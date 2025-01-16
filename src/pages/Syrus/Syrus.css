@@ -20,59 +20,40 @@
     src: url('../../assets/font/Speedy.ttf');
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: #000;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(225, 50, 50);
-    box-shadow: 0 0 10px rgba(248, 248, 248, 0.7);
-}
-
-/* Scrollbar Hover (Makes Spider Glow) */
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 0, 0, 0.9);
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body,
-html {
+.syrus-page {
     overflow-x: hidden;
     font-family: "Outfit", 'serif';
-    /* background: url('./==assets/spiderverse_city.jpeg') no-repeat center;
-  background-size: cover; */
     cursor: url('../../assets/spider_cursor.svg') 16 16, auto !important;
-    /* background: linear-gradient(135deg, #f00 50%, #001f3f 50%); */
 }
 
-a:hover {
+.syrus-page::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+.syrus-page::-webkit-scrollbar-track {
+    background: #000 !important;
+}
+
+.syrus-page::-webkit-scrollbar-thumb {
+    background: rgb(201, 62, 62) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 10px rgba(248, 248, 248, 0.7) !important;
+}
+
+.syrus-page::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 0, 0, 0.9) !important;
+    border-radius: 4px !important;
+}
+
+.syrus-page a:hover {
     text-decoration: none;
 }
 
 
 /******************* Navbar Styles ****************/
-/* nav.navbar {
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 9999;
-    transition: 0.32s ease-in-out;
-} */
 
 .syrus {
-    padding: 0 4rem !important;
+    padding: 0 8rem !important;
     position: fixed;
     width: 100%;
     top: 0;
@@ -314,9 +295,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*******************Banner css ****************/
+.syrus-page {
+    @media (min-width: 1280px) {
+        .container {
+            max-width: 1280px;
+        }
+    }
+}
+
 .banner {
     margin-top: 0;
-    padding: 200px 40px 100px 40px;
+    padding: 150px 40px 70px 40px;
     /* background: linear-gradient(0deg, #1a2841 0%, #0b1322 100%, #080a0e 100%); */
     background: url("../../assets/syrus_25_2.svg") no-repeat center;
     background-size: cover;
@@ -331,16 +320,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner-col-1 {
     padding: 2rem 0;
-    /* background: url("./assets/low_spider_design.png") no-repeat center; */
     background-size: contain;
-    /* Ensures the logo maintains its aspect ratio */
     position: relative;
     animation: fadeIn 1s ease-in-out;
     z-index: 2;
 }
 
 .content-container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     z-index: 3;
@@ -356,7 +343,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         -3px -3px 0 #f4143c,
         0px 0px 5px #f4143c, 0 0 0 #000;
     font-family: "Veto Sans", serif;
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: left;
     font-weight: 900;
     -webkit-text-stroke: 1px #f4143c;
@@ -395,6 +382,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translate(-0.05em, -0.05em);
 } */
 
+.banner .codecell-college-wrapper {
+    padding: 0;
+}
+
+.banner .codecell-info {
+    font-family: "Veto Sans", serif;
+    padding-block: 0.5rem;
+}
+
+.banner .codecell-title {
+    color: var(--primary);
+    font-size: 3rem;
+    text-shadow:
+        3px 3px 0 #2a2251, 0 0 0 #000;
+}
+
+.banner .codecell-title span {
+    color: #fff;
+    text-shadow:
+        3px 3px 0 #251473,
+        0px 0px 5px #f4143c, 0 0 0 #000;
+}
+
+.banner .codecell-subtitle {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.banner .presents {
+    color: #fff;
+    font-size: 2rem;
+}
 
 .banner h3 {
     color: #fff;
@@ -410,7 +429,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     /* color: rgb(242, 85, 85); */
     letter-spacing: 1px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     animation: fadeInDown 2.5s ease-in-out;
 }
 
@@ -420,7 +439,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-family: "Outfit", sans-serif;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     animation: fadeInUp 2.5s ease-in-out;
 }
 
@@ -456,13 +475,11 @@ button {
     background-color: none;
     background: url('../../assets/banner_new_gif.webp') no-repeat center;
     font-weight: 1000;
-    font-size: 2rem;
-    transform: scale(1.2);
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
 }
 
 .spiderman_logo {
-    width: 50vw;
+    /* width: 50vw; */
     height: 65vh;
     min-height: 550px;
     overflow: hidden;
@@ -939,7 +956,7 @@ button {
 
 
 /********************Footer Styles******************/
-.footer {
+.syrus-footer {
     /* min-height: 30vh; */
     background: #121211;
     color: white;
@@ -954,8 +971,8 @@ button {
     font-weight: 100;
 }
 
-.footer-codecell,
-.footer-vesit {
+.syrus-footer-codecell,
+.syrus-footer-vesit {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -966,17 +983,17 @@ button {
     text-wrap: nowrap;
 }
 
-.footer-codecell img {
+.syrus-footer-codecell img {
     width: clamp(3.5rem, 4.75vw, 4.5rem);
     height: clamp(3.5rem, 4.75vw, 4.5rem);
 }
 
-.footer-vesit {
+.syrus-footer-vesit {
     font-family: "Outfit", sans-serif;
     flex-direction: column;
 }
 
-.vesit-name {
+.syrus-footer-name {
     font-size: clamp(0.75rem, 3vw, 1.1rem);
     font-weight: 500;
     display: flex;
@@ -985,18 +1002,18 @@ button {
     align-items: center;
 }
 
-.vesit-name img {
+.syrus-footer-name img {
     width: clamp(1rem, 10vw, 3rem);
 }
 
-.vesit-address {
+.syrus-footer-address {
     font-weight: 200;
     font-size: clamp(0.9rem, 3vw, 1.1rem);
     text-wrap: wrap;
     text-align: center;
 }
 
-.footer-info {
+.syrus-footer-info {
     font-family: "Veto Sans", sans-serif;
     font-size: clamp(0.9rem, 3vw, 1.1rem);
     font-weight: 400;
@@ -1004,25 +1021,25 @@ button {
     text-align: center;
 }
 
-.footer-socials {
+.syrus-footer-socials {
     display: flex;
     gap: 1rem;
 }
 
-.footer-socials a {
+.syrus-footer-socials a {
     transition: transform 0.1s ease-out;
 }
 
-.footer-socials a:hover {
+.syrus-footer-socials a:hover {
     transform: scale(1.05);
     color: white;
 }
 
-.footer-socials svg {
+.syrus-footer-socials svg {
     transition: fill 0.1s ease-in-out;
 }
 
-.footer-socials a:hover svg {
+.syrus-footer-socials a:hover svg {
     fill: white;
 }
 
@@ -1109,6 +1126,10 @@ button {
         margin-top: 0;
         padding: 4rem 0;
         overflow: hidden;
+
+        .row {
+            flex-wrap: wrap;
+        }
     }
 
     .content-container {
@@ -1124,31 +1145,32 @@ button {
 
 
     .tagline {
-        font-size: 2.5rem;
+        font-size: 4rem;
+        padding: 0.5rem 0 0.5rem 0;
         text-align: left;
-        padding: 1rem 0 0 0;
         font-weight: 600;
         text-transform: uppercase;
-        animation: fadeIn 2.5s ease-in-out;
+        animation: none;
     }
 
     .tagline::before {
-        padding: 1rem 0 0 0;
         content: attr(data-text);
         position: absolute;
+        padding: 0.5rem 0 0.5rem 0;
         top: 0;
         left: 0;
         color: #313f97;
         z-index: -1;
-        transition: transform 0.2s;
+        transition: none;
     }
 
     .tagline:hover::before {
-        transform: translate(0.05em, 0.05em);
+        transform: translate(0, 0);
     }
 
     .banner button {
         color: #313f97;
+        width: 90%;
         font-weight: 800;
         font-size: 18px;
         background-color: rgb(242, 85, 85);
@@ -1168,6 +1190,19 @@ button {
         font-size: 18px;
         transform: scale(1);
         box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    }
+
+    .banner .codecell-info {
+        width: 100%;
+        padding-block: 0;
+    }
+
+    .banner .codecell-title {
+        font-size: 2rem;
+    }
+
+    .banner .presents span {
+        font-size: 1.5rem;
     }
 
     .banner button:active {
