@@ -99,11 +99,11 @@
   font-weight: 700;
 }
 
-.card-container {
+.team-card-container {
   width: 300px;
 }
 
-.cards-wrapper {
+.team-cards-wrapper {
   width: 100%;
   height: fit-content;
 }
