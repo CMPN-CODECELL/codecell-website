@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import IntegrateModel from "./SpiderLogo/IntegrateModel";
+import VESITLogo from "../../assets/VESIT.png";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,6 +51,20 @@ function Banner() {
         <Row>
           <Col xs={12} md={6} xl={7} className="banner-col-1">
             <div className="content-container">
+            {/* <div className="codecell-college-wrapper">
+                    <img src={VESITLogo} alt="" className="codecell-college-logo" />
+                    <div className="codecell-college-name">
+                      Vivekanand Education Society's Institute of Technology
+                    </div>
+                  </div> */}
+              <div className="codecell-info">
+            <div className="codecell-title">
+              CodeCell <span>CMPN VESIT</span>
+            </div>
+            <div className="codecell-title presents">
+              <span>Presents</span>
+            </div>
+          </div>
               <h1 className="tagline" data-text="SYRUS HACKATHON">SYRUS HACKATHON</h1>
               <h3>
                 <span
@@ -61,11 +76,7 @@ function Banner() {
                 </span>
               </h3>
               <p>
-                Focused on promoting innovation, diversity, and networking among
-                all future engineers. Upcoming engineers and developers are
-                hosted for an intense 24-hour session. Participants are able to
-                gain hands-on knowledge of the present trends and quite possibly
-                set new ones themselves.
+                Promoting innovation, diversity, and networking, the event offers future engineers a 24-hour hands-on session to explore current trends and pioneer new ones.
               </p>
               <Row xl={3} p={2} className="button-group">
                     <Button className=" mx-3">CodeCell</Button>

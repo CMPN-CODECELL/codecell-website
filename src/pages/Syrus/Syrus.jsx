@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './Syrus.css'
 import Banner from "../../components/syruscomponents/Banner"
 import Header from "../../components/syruscomponents/Header"
@@ -11,6 +11,13 @@ import Sponsor from "../../components/syruscomponents/Sponsor"
 import SyrusScrollToTop from "../../components/syruscomponents/SyrusScrollToTop"
 
 function Syrus() {
+  useEffect(() => {
+        document.body.classList.add("syrus-page");
+
+        return () => {
+            document.body.classList.remove("syrus-page");
+        };
+    }, []);
   return (
     <>
         <Header />
