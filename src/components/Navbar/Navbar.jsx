@@ -11,7 +11,7 @@ function CodecellNav() {
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
+      expand="xxl"
       className="bg-body-tertiary codecell-nav"
       variant="dark"
     >
@@ -34,10 +34,11 @@ function CodecellNav() {
       </Navbar.Toggle>
       <Navbar.Collapse className="nav-items-wrapper" id="responsive-navbar-nav">
         <div className="nav-items">
+          <div className="nav-item syrus-nav">
+            <a href="/syrus">Syrus'25</a>
+          </div>
           <div className="nav-item">
-            <a className="something" href="/#upcoming-events">
-              Upcoming
-            </a>
+            <a href="/#upcoming-events">Upcoming</a>
           </div>
           <div className="nav-item">
             <a href="/team">Team</a>

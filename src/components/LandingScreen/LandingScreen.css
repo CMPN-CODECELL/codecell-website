@@ -47,7 +47,14 @@
   /* width: 60vw; */
 }
 
-.upcoming-button-button {
+.landing-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upcoming-button {
   width: fit-content !important;
   /* height: 3rem !important; */
   font-family: "Press Start 2P", sans-serif;
@@ -65,18 +72,58 @@
   text-decoration: none !important; */
 }
 
-.upcoming-button-button:hover {
+.upcoming-button:hover {
   transform: scale(1.05);
   border: 2px solid var(--primary);
   background-color: var(--dark);
   color: var(--primary);
+  transform: translate(0.05em, 0.05em);
+  filter: drop-shadow(3px 3px 0px var(--primary));
 }
 
-.upcoming-button-button:active {
+.upcoming-button:active {
   transform: scale(1);
   background-color: var(--dark) !important;
   color: var(--primary) !important;
   border: 2px solid var(--primary) !important;
+}
+
+.syrus-button-landing {
+  width: fit-content !important;
+  /* height: 3rem !important; */
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.3rem;
+  background: #313f97;
+  color: white;
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--primary);
+  text-align: center;
+  padding: 0.5rem;
+  padding-inline: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid transparent;
+  /* color: white !important;
+  text-decoration: none !important; */
+}
+
+.syrus-button-landing:hover {
+  transform: scale(1.05);
+  border: 2px solid #313f97;
+  background-color: red;
+  color: white;
+  transform: translate(0.05em, 0.05em);
+  filter: drop-shadow(3px 3px 0px #313f97);
+  text-shadow: 3px 3px 0px #313f97;
+}
+
+.syrus-button-landing:active {
+  transform: scale(1);
+  border: 2px solid #313f97 !important;
+  background-color: red !important;
+  color: white !important;
+  transform: translate(0.05em, 0.05em) !important;
+  filter: drop-shadow(3px 3px 0px #313f97) !important;
+  text-shadow: 3px 3px 0px #313f97 !important;
 }
 
 .codecell-info {
@@ -148,8 +195,15 @@
     height: 35vh;
     min-height: 250px;
   }
-  .upcoming-button-button {
-    width: 100% !important;
+  .landing-buttons {
+    justify-content: center;
+  }
+  .upcoming-button {
+    width: 50% !important;
+    font-size: 1.1rem;
+  }
+  .syrus-button-landing {
+    width: 50% !important;
     font-size: 1.1rem;
   }
 }
@@ -164,6 +218,22 @@
   .codecell-model {
     width: 58vw;
     height: 35vh !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-buttons {
+    flex-direction: column;
+  }
+  .upcoming-button {
+    width: 100% !important;
+  }
+  .syrus-button-landing {
+    width: 100% !important;
+  }
+  .codecell-model {
+    width: 62vw;
+    height: 25vh !important;
   }
 }
 

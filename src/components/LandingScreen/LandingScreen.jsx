@@ -6,6 +6,7 @@ import VESITLogo from "../../assets/VESIT.png";
 import "./LandingScreen.css";
 
 const LandingScreen = () => {
+  console.log(window.innerWidth);
   return (
     <div className="landing-screen" id="landing-screen">
       <div className="info-section">
@@ -25,9 +26,12 @@ const LandingScreen = () => {
             </div>
           </div>
         </GlassContainer>
-        <div className="upcoming-button">
-          <Button className="upcoming-button-button" href="#upcoming-events">
-            Upcoming workshops
+        <div className="landing-buttons">
+          <Button className="upcoming-button" href="#upcoming-events">
+            Upcoming {window.innerWidth > 1350 && "Workshops"}
+          </Button>
+          <Button className="syrus-button-landing" href="/syrus">
+            Syrus'25
           </Button>
         </div>
       </div>
