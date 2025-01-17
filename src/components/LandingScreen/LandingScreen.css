@@ -102,18 +102,19 @@
   padding-inline: 1.5rem;
   transition: transform 0.2s ease-in-out;
   border: 2px solid transparent;
+  text-shadow: 2px 2px 0px red;
   /* color: white !important;
   text-decoration: none !important; */
 }
 
 .syrus-button-landing:hover {
   transform: scale(1.05);
-  border: 2px solid #313f97;
-  background-color: red;
+  border: 2px solid red;
+  background-color: #313f97;
   color: white;
   transform: translate(0.05em, 0.05em);
-  filter: drop-shadow(3px 3px 0px #313f97);
-  text-shadow: 3px 3px 0px #313f97;
+  filter: drop-shadow(3px 3px 0px red);
+  text-shadow: 3px 3px 0px red;
 }
 
 .syrus-button-landing:active {
