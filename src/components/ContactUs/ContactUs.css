@@ -140,3 +140,12 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 370px) {
+  .contact-desc-heading {
+    font-size: 8vw;
+  }
+  .contact-desc-subheading {
+    font-size: 5vw;
+  }
+}

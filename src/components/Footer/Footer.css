@@ -25,6 +25,11 @@
   text-wrap: nowrap;
 }
 
+.footer-vesit {
+  text-wrap: wrap;
+  text-align: center;
+}
+
 .footer-codecell img {
   width: clamp(3.5rem, 4.75vw, 4.5rem);
   height: clamp(3.5rem, 4.75vw, 4.5rem);

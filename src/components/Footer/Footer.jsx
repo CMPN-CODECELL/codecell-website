@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-info">
-        © 2023-2024 CodeCell VESIT. All Rights Reserved.
+        © 2024-2025 CodeCell VESIT. All Rights Reserved.
       </div>
       <div className="footer-socials">
         <a

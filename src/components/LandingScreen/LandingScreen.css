@@ -47,7 +47,14 @@
   /* width: 60vw; */
 }
 
-.upcoming-button-button {
+.landing-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upcoming-button {
   width: fit-content !important;
   /* height: 3rem !important; */
   font-family: "Press Start 2P", sans-serif;
@@ -65,27 +72,73 @@
   text-decoration: none !important; */
 }
 
-.upcoming-button-button:hover {
+.upcoming-button:hover {
   transform: scale(1.05);
   border: 2px solid var(--primary);
   background-color: var(--dark);
   color: var(--primary);
+  transform: translate(0.05em, 0.05em);
+  filter: drop-shadow(3px 3px 0px var(--primary));
 }
 
-.upcoming-button-button:active {
+.upcoming-button:active {
   transform: scale(1);
   background-color: var(--dark) !important;
   color: var(--primary) !important;
   border: 2px solid var(--primary) !important;
 }
 
+.syrus-button-landing {
+  width: fit-content !important;
+  /* height: 3rem !important; */
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.3rem;
+  background: #313f97;
+  color: white;
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--primary);
+  text-align: center;
+  padding: 0.5rem;
+  padding-inline: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid transparent;
+  text-shadow: 2px 2px 0px red;
+  /* color: white !important;
+  text-decoration: none !important; */
+}
+
+.syrus-button-landing:hover {
+  transform: scale(1.05);
+  border: 2px solid red;
+  background-color: #313f97;
+  color: white;
+  transform: translate(0.05em, 0.05em);
+  filter: drop-shadow(3px 3px 0px red);
+  text-shadow: 3px 3px 0px red;
+}
+
+.syrus-button-landing:active {
+  transform: scale(1);
+  border: 2px solid #313f97 !important;
+  background-color: red !important;
+  color: white !important;
+  transform: translate(0.05em, 0.05em) !important;
+  filter: drop-shadow(3px 3px 0px #313f97) !important;
+  text-shadow: 3px 3px 0px #313f97 !important;
+}
+
 .codecell-info {
   position: relative;
   color: white;
   font-family: "Press Start 2P", sans-serif;
-  font-size: clamp(3rem, 4vw, 3.75rem);
+  font-size: clamp(3rem, 3vw, 4rem);
+  /* font-size: clamp(3rem, 4vw, 3.75rem); */
   padding-block: 2rem;
   z-index: 2;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .codecell-title span {
@@ -106,6 +159,11 @@
   overflow: hidden;
 }
 
+/* .codecell-model canvas {
+  touch-action: none !important;
+  pointer-events: none;
+} */
+
 @media screen and (max-width: 1100px) {
   .codecell-nav {
     padding-inline: 2rem !important;
@@ -121,6 +179,7 @@
   .codecell-info {
     width: 70vw;
     font-size: 2.4rem;
+    min-height: unset;
   }
   /* .codecell-title {
     display: flex;
@@ -137,8 +196,15 @@
     height: 35vh;
     min-height: 250px;
   }
-  .upcoming-button-button {
-    width: 100% !important;
+  .landing-buttons {
+    justify-content: center;
+  }
+  .upcoming-button {
+    width: 50% !important;
+    font-size: 1.1rem;
+  }
+  .syrus-button-landing {
+    width: 50% !important;
     font-size: 1.1rem;
   }
 }
@@ -153,5 +219,30 @@
   .codecell-model {
     width: 58vw;
     height: 35vh !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-buttons {
+    flex-direction: column;
+  }
+  .upcoming-button {
+    width: 100% !important;
+  }
+  .syrus-button-landing {
+    width: 100% !important;
+  }
+  .codecell-model {
+    width: 62vw;
+    height: 25vh !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .info-section .glass-container {
+    padding: 1rem;
+  }
+  .codecell-college-name {
+    font-size: 0.75rem;
   }
 }

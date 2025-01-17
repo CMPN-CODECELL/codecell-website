@@ -225,7 +225,7 @@
   .event-month,
   .event-guest {
     font-size: clamp(0.95rem, 2.85vw, 1.25rem);
-    text-align: center;
+    /* text-align: center; */
   }
   .event-info {
     width: 100%;
@@ -236,8 +236,23 @@
     flex-direction: column;
     gap: 0.25rem;
   }
+  .event-month {
+    width: 100%;
+    max-width: 100%;
+  }
   .event-guest {
     width: 100% !important;
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .event {
+    height: 75vh;
+  }
+  .event-info-wrapper {
+    /* padding-block: 1rem; */
+    flex-direction: column;
+    gap: 0.25rem;
   }
 }
