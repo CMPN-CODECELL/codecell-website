@@ -21,21 +21,8 @@ const UpcomingWorkshops = () => {
   // const workshops = [
   //   {
   //     name: "Introduction to Python Programming",
-  //     image_link:
-  //       "https://images.pexels.com/photos/7828072/pexels-photo-7828072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  //     image_link: "https://i.imgur.com/hw3f8XJ.png",
   //     google_form_link: "https://forms.gle/placeholder1",
-  //   },
-  //   {
-  //     name: "Web Development with HTML, CSS, and JavaScript",
-  //     image_link:
-  //       "https://images.pexels.com/photos/7828072/pexels-photo-7828072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  //     google_form_link: "https://forms.gle/placeholder2",
-  //   },
-  //   {
-  //     name: "Data Science and Machine Learning Basics",
-  //     image_link:
-  //       "https://images.pexels.com/photos/7828072/pexels-photo-7828072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  //     google_form_link: "https://forms.gle/placeholder3",
   //   },
   // ];
 
