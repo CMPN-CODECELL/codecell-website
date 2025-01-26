@@ -25,7 +25,9 @@
 }
 
 .workshops-wrapper {
-  height: 50vh;
+  /* min-height: 50vh; */
+  max-height: 700px;
+  padding-block: 2rem;
   color: white;
   font-family: "Press Start 2P", sans-serif;
   display: flex;
@@ -36,8 +38,9 @@
 }
 
 .workshop-card {
-  width: 20vw;
-  height: 85%;
+  width: 25vw;
+  aspect-ratio: 1/1;
+  /* height: 85%; */
   border: 1px solid var(--primary);
   border-radius: 25px;
   display: flex;
@@ -115,7 +118,7 @@
     display: none;
   }
   .workshop-card {
-    min-width: 30vw;
+    min-width: 32vw;
   }
 }
 
@@ -137,9 +140,9 @@
     /* min-width: 25vh; */
     /* width: fit-content; */
 
-    max-width: 80vw;
+    width: clamp(300px, 55vw, 375px);
     aspect-ratio: 1;
-    width: fit-content;
+    /* width: fit-content; */
     border-radius: 25px;
     overflow: hidden;
   }
@@ -147,6 +150,6 @@
 
 @media screen and (max-width: 376px) {
   .workshop-card {
-    width: 90vw;
+    width: 80vw;
   }
 }
