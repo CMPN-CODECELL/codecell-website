@@ -80,6 +80,11 @@ function Header() {
               onClick={() => onUpdateActiveLink('faq-section')}>
               Faq
             </Nav.Link>
+            <Nav.Link href="#sponsorsus" 
+              className={activeLink === 'sponsorsus' ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink('sponsorsus')}>
+              Sponsor Us?
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

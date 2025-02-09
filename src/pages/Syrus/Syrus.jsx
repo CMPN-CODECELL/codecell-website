@@ -9,6 +9,7 @@ import Faq from "../../components/syruscomponents/Faq"
 import SyrusFooter from "../../components/syruscomponents/SyrusFooter"
 import Sponsor from "../../components/syruscomponents/Sponsor"
 import SyrusScrollToTop from "../../components/syruscomponents/SyrusScrollToTop"
+import SponsorUs from '../../components/syruscomponents/SponsorUs';
 
 function Syrus() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function Syrus() {
         <Timeline />
         <Domain />
         {/* <Sponsor /> */}
+        <SponsorUs />
         <Gallery />
         <Faq />
         <SyrusFooter />
