@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 // import SyrusLogo from '../assets/syrus_logo.png';
 import SyrusLogo from '../../assets/SyrusLogo.svg'
+import Modal from 'react-bootstrap/Modal';
+import SponsorUs from './SponsorUs';
 
 function Header() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  const [navbarActive, setNavbarActive] = useState(false); 
+  const [navbarActive, setNavbarActive] = useState(false);
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true); 
 
   useEffect(() => {
     const onScroll = () => {
@@ -82,9 +88,24 @@ function Header() {
             </Nav.Link>
             <Nav.Link href="#sponsorsus" 
               className={activeLink === 'sponsorsus' ? 'active navbar-link' : 'navbar-link'} 
-              onClick={() => onUpdateActiveLink('sponsorsus')}>
+              onClick={handleShow}>
               Sponsor Us?
             </Nav.Link>
+              <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Body>
+          <SponsorUs />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button className="cta-button-primary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
           </Nav>
         </Navbar.Collapse>
       </Container>

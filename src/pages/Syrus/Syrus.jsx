@@ -25,8 +25,7 @@ function Syrus() {
         <Banner />
         <Timeline />
         <Domain />
-        {/* <Sponsor /> */}
-        <SponsorUs />
+        <Sponsor />
         <Gallery />
         <Faq />
         <SyrusFooter />

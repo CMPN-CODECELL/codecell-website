@@ -756,8 +756,8 @@ button {
 
 /***********Sponsor Section****************/
 .main_sponsor {
-    margin: 1rem auto !important;
-    padding: 1rem 2rem !important;
+    margin: 0 auto !important;
+    padding: 1rem 1rem !important;
     border-radius: 8px !important;
     width: 75% !important;
     animation: fadeIn 0.5s ease-in-out forwards;
@@ -772,6 +772,30 @@ button {
     gap: 3rem;
     width: 100%;
     max-width: 900px;
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        margin-bottom: 1.5rem;
+        font-family: 'Outfit', sans-serif;
+    }
+}
+
+.modal-dialog {
+    max-width: 900px;
+    z-index: 9999;
+    margin: 5rem auto;
+}
+
+.modal-content {
+    background-color: #121211 !important;
+    color: white;
+
+    button {
+        color: white !important;
+    }
 }
 
 .sponsorSub {
@@ -798,6 +822,17 @@ button {
     justify-content: center;
 }
 
+.Certificate_sponserItems {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sponsorItems:has(:only-child) {
+    display: flex;
+    justify-content: center;
+}
+
 .sponsorItems div {
     width: 220px;
     height: 220px;
@@ -812,8 +847,8 @@ button {
 }
 
 .sponsor_img:hover {
-    transform: scale(1.1) rotateY(15deg) rotateZ(5deg);
-    filter: drop-shadow(0 0 8px #f4143c);
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 4px #f4143c);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -1317,6 +1352,12 @@ button {
         justify-content: space-between;
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .Certificate_sponserItems {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .sponsorItems div {

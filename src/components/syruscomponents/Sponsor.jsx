@@ -1,43 +1,90 @@
-import Github from '../../assets/sponsors/github.png'
-import Bronze from '../../assets/sponsors/bronze.png'
-import Microsoft from '../../assets/sponsors/microsoft.png'
-import replit from '../../assets/sponsors/replit.png'
-import Devfolio from '../../assets/sponsors/devfolio.png'
-import Filecoin from '../../assets/sponsors/filecoin.png'
+import Unstop from '../../assets/sponsors/Unstop.png';  
+import Uptiq from '../../assets/sponsors/Uptiq.png';  
+import Sprect from '../../assets/sponsors/Sprect.png';  
+import Certificate from '../../assets/sponsors/Certificate.png';
+import Fueler from '../../assets/sponsors/Fueler.png';
+import Github from '../../assets/sponsors/Github.png';
+import InterviewBuddy from '../../assets/sponsors/InterviewBuddy.png';
+import InterviewCake from '../../assets/sponsors/InterviewCake.png';
+import XYZ from '../../assets/sponsors/XYZ.png';
 
 function Sponsor() {
   return (
     <section id="sponsors" className="bg-[#121211] py-6 text-white">
-    <div className=' container mx-auto px-2 py-2'>
+      <div className='container mx-auto px-2 py-2'>
         <h2 className="internal-headings" data-text="SPONSORS">SPONSORS</h2>
-    </div>
-    <div className="main_sponsor">
-                <div className="sponsor-container">
-                    <div className="sponsorItems">
-                        <div>
-                            <img src={Github} alt="sponsor" className="sponsor_img" />
-                        </div>
-                        <div>
-                            <img src={Bronze} alt="sponsor" className="sponsor_img" />
-                        </div>
-                        <div>
-                            <img src={Devfolio} alt="sponsor" className="sponsor_img" />
-                        </div>
-                        <div>
-                            <img src={Microsoft} alt="sponsor" className="sponsor_img" />
-                        </div>
-                        <div>
-                            <img src={replit} alt="sponsor" className="sponsor_img" />
-                        </div>
-                        <div>
-                            <img src={Filecoin} alt="sponsor" className="sponsor_img" />
-                        </div>
-                    </div>
+      </div>
+      <div className="main_sponsor">
+        <div className="sponsor-container">
+          <div className="sponsorCategory">
+              <h3 className="text-xl font-bold text-center my-4">Powered by</h3>
+              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div  className="sponsorItem">
+                    <img src={Unstop} alt="unstop.png" className="sponsor_img w-40" />
                 </div>
-    </div>
-</section>
-
-  )
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="main_sponsor">
+        <div className="sponsor-container">
+          <div className="sponsorCategory">
+              <h3 className="text-xl font-bold text-center my-4">Title Sponsor</h3>
+              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div  className="sponsorItem">
+                    <img src={Uptiq} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="main_sponsor">
+        <div className="sponsor-container">
+          <div className="sponsorCategory">
+              <h3 className="text-xl font-bold text-center my-4">Networking Partner</h3>
+              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div  className="sponsorItem">
+                    <img src={Sprect} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="main_sponsor">
+        <div className="sponsor-container">
+          <div className="sponsorCategory">
+              <h3>Certificate Partner</h3>
+              <div className="Certificate_sponserItems flex flex-wrap justify-center gap-4">
+              <div  className="sponsorItem">
+                    <img src={Certificate} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div className="main_sponsor">
+        <div className="sponsor-container">
+          <div className="sponsorCategory">
+              <h3>Associate Sponsors</h3>
+              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div  className="sponsorItem">
+                    <img src={Fueler} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+                <div  className="sponsorItem">
+                    <img src={InterviewBuddy} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+                <div  className="sponsorItem">
+                    <img src={InterviewCake} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+                <div  className="sponsorItem">
+                    <img src={XYZ} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Sponsor
+export default Sponsor;

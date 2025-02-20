@@ -2,10 +2,7 @@ import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 
 function SponsorUs(){
     return(
-        <section id="sponsorsus" className="bg-[#121211] py-6 text-white">
-            <div className=' container mx-auto px-2 py-3'>
-                <h2 className="sponsorusMain" data-text="SPONSOR US">SPONSOR US</h2>
-            </div>
+        <section id="sponsorsus" className="bg-[#121211] text-white">
             <div className="sponsor-section">
             <Container>
                 <Card className="main-card">
