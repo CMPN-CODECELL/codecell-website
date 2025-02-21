@@ -61,6 +61,11 @@ function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+              {/* <Nav.Link href="#sponsors" 
+              className={activeLink === 'sponsors' ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => onUpdateActiveLink('sponsors')}>
+              Sponsors
+            </Nav.Link> */}
             <Nav.Link href="#timeline" 
               className={activeLink === 'timeline' ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink('timeline')}>
@@ -69,7 +74,7 @@ function Header() {
             <Nav.Link href="#domain" 
               className={activeLink === 'domain' ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink('domain')}>
-              Domain
+              Domains
             </Nav.Link>
             {/* <Nav.Link href="#sponsors" 
               className={activeLink === 'sponsors' ? 'active navbar-link' : 'navbar-link'} 
@@ -84,9 +89,9 @@ function Header() {
             <Nav.Link href="#faq-section" 
               className={activeLink === 'faq-section' ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink('faq-section')}>
-              Faq
+              FAQs
             </Nav.Link>
-            <Nav.Link href="#sponsorsus" 
+            {/* <Nav.Link href="#sponsorsus" 
               className={activeLink === 'sponsorsus' ? 'active navbar-link' : 'navbar-link'} 
               onClick={handleShow}>
               Sponsor Us?
@@ -94,8 +99,8 @@ function Header() {
               <Modal
         show={show}
         onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
+        backdrop="true" 
+        keyboard={true}
       >
         <Modal.Body>
           <SponsorUs />
@@ -105,7 +110,7 @@ function Header() {
             Close
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

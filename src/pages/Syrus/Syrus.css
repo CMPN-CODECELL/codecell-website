@@ -783,6 +783,29 @@ button {
     }
 }
 
+.mainSponsorgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    margin-bottom: 1rem !important;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        font-family: 'Outfit', sans-serif;
+    }
+}
+
+.mainSponsorgridDiv div {
+    width: 200px;
+    height: 200px;
+}
+
 .modal-dialog {
     max-width: 900px;
     z-index: 9999;
@@ -817,6 +840,15 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+    margin-bottom: 1rem !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.assosiateSponsorItems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
     margin-bottom: 1rem !important;
     align-items: center;
     justify-content: center;
@@ -945,7 +977,7 @@ button {
 
 .sponsor-card .card-text {
     color: #fff;
-    text-align: justify;
+    text-align: left;
 }
 
 .cta-button-primary {

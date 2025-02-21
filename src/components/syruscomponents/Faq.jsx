@@ -47,21 +47,21 @@ function Faq() {
   return (
     <section className="bg-[#121211] text-white" id="faq-section">
       <div className="container mx-auto px-3 py-4">
-        <h2 className="internal-headings" data-text="FAQS">FAQS</h2>
+        <h2 className="internal-headings" data-text="FAQs">FAQs</h2>
         <div className="max-w-6xl mx-auto">
           {faqData.map((item, index) => (
             <div key={index} className="border-b border-[#ff3535] overflow">
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`w-full text-left p-4 flex justify-between items-center bg-[#121211] hover:cursor-pointer transition-colors ${activeIndex === index ? 'text-[#ff3535] font-medium font-sans text-lg' : ""} `}
+                className={`w-full text-left flex justify-between items-center bg-[#121211] hover:cursor-pointer transition-colors ${activeIndex === index ? 'text-[#ff3535] font-medium text-lg p-2' : "p-4"} `}
               >
-                <span className="font-semibold">{item.question}</span>
+                <span className="font-bold">{item.question}</span>
                 <FaSpider
                   className={`transform transition-transform ${activeIndex === index ? 'rotate-180' : 'rotate-0'}`}
                 />
               </button>
               <div
-                className={`overflow-hidden transition-max-height duration-500 ${activeIndex === index ? 'max-h-40' : 'max-h-0'}`}
+                className={`overflow-hidden transition-max-height duration-500 ${activeIndex === index ? 'max-h-20' : 'max-h-0'}`}
               >
                 <p className="px-4 py-3 text-white">{item.answer}</p>
               </div>

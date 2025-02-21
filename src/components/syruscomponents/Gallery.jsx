@@ -41,7 +41,7 @@ function Gallery() {
     </h2>
     <Carousel
       swipeable={true}
-      draggable={true}
+      draggable={false}
       autoPlay={true}
       arrows={true}
       responsive={responsive}

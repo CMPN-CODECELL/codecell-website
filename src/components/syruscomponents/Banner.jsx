@@ -12,7 +12,7 @@ function Banner() {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = ["Integrate", "Collaborate", "Innovate"];
-  const period = 1000;
+  const period = 400;
 
   useEffect(() => {
     let ticker = setInterval(() => {

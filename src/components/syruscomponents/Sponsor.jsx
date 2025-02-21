@@ -11,38 +11,38 @@ import XYZ from '../../assets/sponsors/XYZ.png';
 function Sponsor() {
   return (
     <section id="sponsors" className="bg-[#121211] py-6 text-white">
-      <div className='container mx-auto px-2 py-2'>
-        <h2 className="internal-headings" data-text="SPONSORS">SPONSORS</h2>
+      <div className='container mx-auto px-2 mt-3 py-2'>
+        <h2 className="internal-headings" data-text="OUR SPONSORS">OUR SPONSORS</h2>
       </div>
       <div className="main_sponsor">
-        <div className="sponsor-container">
+        <div className="mainSponsorgrid">
           <div className="sponsorCategory">
               <h3 className="text-xl font-bold text-center my-4">Powered by</h3>
-              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div className="mainSponsorgridDiv flex flex-wrap justify-center gap-4">
               <div  className="sponsorItem">
                     <img src={Unstop} alt="unstop.png" className="sponsor_img w-40" />
                 </div>
             </div>
             </div>
-        </div>
-      </div>
-      <div className="main_sponsor">
-        <div className="sponsor-container">
-          <div className="sponsorCategory">
+            <div className="sponsorCategory">
               <h3 className="text-xl font-bold text-center my-4">Title Sponsor</h3>
-              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div className="mainSponsorgridDiv flex flex-wrap justify-center gap-4">
               <div  className="sponsorItem">
                     <img src={Uptiq} alt="unstop.png" className="sponsor_img w-40" />
                 </div>
             </div>
             </div>
-        </div>
-      </div>
-      <div className="main_sponsor">
-        <div className="sponsor-container">
-          <div className="sponsorCategory">
+            <div className="sponsorCategory">
+              <h3 className="text-xl font-bold text-center my-4">Operations Partner</h3>
+              <div className="mainSponsorgridDiv flex flex-wrap justify-center gap-4">
+              <div  className="sponsorItem">
+                    <img src={Github} alt="unstop.png" className="sponsor_img w-40" />
+                </div>
+            </div>
+            </div>
+            <div className="sponsorCategory">
               <h3 className="text-xl font-bold text-center my-4">Networking Partner</h3>
-              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div className="mainSponsorgridDiv flex flex-wrap justify-center gap-4">
               <div  className="sponsorItem">
                     <img src={Sprect} alt="unstop.png" className="sponsor_img w-40" />
                 </div>
@@ -50,6 +50,7 @@ function Sponsor() {
             </div>
         </div>
       </div>
+
       <div className="main_sponsor">
         <div className="sponsor-container">
           <div className="sponsorCategory">
@@ -66,7 +67,7 @@ function Sponsor() {
         <div className="sponsor-container">
           <div className="sponsorCategory">
               <h3>Associate Sponsors</h3>
-              <div className="sponsorItems flex flex-wrap justify-center gap-4">
+              <div className="assosiateSponsorItems flex flex-wrap justify-center gap-4">
               <div  className="sponsorItem">
                     <img src={Fueler} alt="unstop.png" className="sponsor_img w-40" />
                 </div>

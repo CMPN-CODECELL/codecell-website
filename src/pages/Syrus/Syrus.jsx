@@ -23,9 +23,9 @@ function Syrus() {
     <>
         <Header />
         <Banner />
+        <Sponsor />
         <Timeline />
         <Domain />
-        <Sponsor />
         <Gallery />
         <Faq />
         <SyrusFooter />

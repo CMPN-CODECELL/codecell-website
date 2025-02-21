@@ -7,7 +7,7 @@ function SponsorUs(){
             <Container>
                 <Card className="main-card">
                 <Card.Body>
-                    <h1 className="sponsor-title">Want to Sponsor Us?</h1>
+                    <h1 className="sponsor-title">Want to Help Us?</h1>
                     <p className="sponsor-subtitle">
                         With great power comes great responsibility - Help us empower the next generation of tech heroes
                     </p>
