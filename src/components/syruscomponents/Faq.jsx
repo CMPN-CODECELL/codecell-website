@@ -61,9 +61,9 @@ function Faq() {
                 />
               </button>
               <div
-                className={`overflow-hidden transition-max-height duration-500 ${activeIndex === index ? 'max-h-20' : 'max-h-0'}`}
+                className={`overflow-hidden transition-max-height duration-500 ${activeIndex === index ? 'max-h-40' : 'max-h-0'}`}
               >
-                <p className="px-4 py-3 text-white">{item.answer}</p>
+                <p className="px-4 py-2 text-white">{item.answer}</p>
               </div>
             </div>
           ))}

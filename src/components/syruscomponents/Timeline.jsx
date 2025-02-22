@@ -59,8 +59,8 @@ function Timeline() {
   return (
     <section className="bg-[#121211] text-white" id="timeline">
       <div className="container mx-auto px-2 py-2">
-        <h2 className="internal-headings" data-text="Timeline">
-          Timeline
+        <h2 className="internal-headings" data-text="TIMELINE">
+          TIMELINE
         </h2>
       </div>
       <div className="container mx-auto">
