@@ -1088,6 +1088,26 @@ button {
     visibility: visible;
 }
 
+@media(600px<=width<=1300px) {
+    .mainSponsorgrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        .sponsor_img {
+            margin: 0 auto;
+            height: 80%;
+            width: 80%;
+        }
+    }
+}
+
 /*******************Media Queries****************/
 @media (300px<=width <=600px) {
     .syrus {
