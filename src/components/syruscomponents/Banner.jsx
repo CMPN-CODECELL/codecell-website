@@ -92,7 +92,7 @@ function Banner() {
                 <Button className=" mx-3" onClick={() => navigate("/")}>
                   CodeCell
                 </Button>
-                <Button className=" mx-3">Register</Button>
+                <Button className=" mx-3" onClick={()=>navigate("https://unstop.com/p/syrus-hackathon-2025-codecell-tinkerers-of-computer-eng-dept-at-vesit-1420661")}>Register</Button>
               </Row>
             </div>
           </Col>
