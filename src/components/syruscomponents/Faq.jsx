@@ -3,39 +3,39 @@ import { useState } from 'react';
 
 function Faq() {
   const faqData = [
-    {
-      question: "I do not have a lot of experience in coding. Can I still join this hackathon?",
-      answer: "Yes, Syrus '25 is beginner-friendly. Even if you do not have a lot of experience, you can participate and learn new things.",
-    },
-    {
-      question: "Where can I register for the hackathon?",
-      answer: "Register via the registration links available on SYRUS's official website or through the Google form provided in the emails and WhatsApp messages.",
-    },
-    {
-      question: "What is the required team size to participate?",
-      answer: "The required team size to participate is 2-4 members.",
-    },
-    {
-      question: "Can people from different branches/years form a team?",
-      answer: "Yes, there are no restrictions in forming teams from diverse branches and years. However, all participants must be from VESIT only.",
-    },
-    {
-      question: "Is there any entry fee for the registration?",
-      answer: "No, Syrus is free for all the participants.",
-    },
-    {
-      question: "What is the judging criteria for the hackathon?",
-      answer: "The judging criteria for the hackathon will be based on your innovation and understanding of the problem statement. A detailed document containing the guidelines and judging criteria will be sent to all the registered teams.",
-    },
-    {
-      question: "Are there any particular domains for the hackathon?",
-      answer: "Yes, the hackathon will focus on the following domains: Web 2.0, Web 3.0, and GenAI",
-    },
-    {
-      question: "Will there be any workshops or mentoring sessions?",
-      answer: "Yes, there will be workshops and mentoring sessions conducted by industry experts to help participants with their projects and provide guidance.",
-    },
-  ];
+  {
+    "question": "I do not have a lot of experience in coding. Can I still join this hackathon?",
+    "answer": "Yes, Syrus '25 is beginner-friendly. Even if you do not have a lot of experience, you can participate and learn new things."
+  },
+  {
+    "question": "Where can I register for the hackathon?",
+    "answer": "Register via the registration links available on SYRUS's official website or through links provided in the emails and WhatsApp messages."
+  },
+  {
+    "question": "What is the required team size to participate?",
+    "answer": "The required team size to participate is 2-4 members."
+  },
+  {
+    "question": "Can people from different branches/years form a team?",
+    "answer": "Yes, there are no restrictions in forming teams from diverse branches and years. However, all participants must be from VESIT only."
+  },
+  {
+    "question": "Is there any entry fee for the registration?",
+    "answer": "No, Syrus is free for all the participants."
+  },
+  {
+    "question": "What is the judging criteria for the hackathon?",
+    "answer": "The judging criteria for the hackathon will be based on your innovation and understanding of the problem statement. A detailed document containing the guidelines and judging criteria will be sent to all the registered teams."
+  },
+  {
+    "question": "Are there any particular domains for the hackathon?",
+    "answer": "Yes, the hackathon will focus on the following theme: Agentic AI and Generative AI in finance."
+  },
+  {
+    "question": "Will there be any workshops or mentoring sessions?",
+    "answer": "Yes, there will be workshops and mentoring sessions conducted by industry experts to help participants with their projects and provide guidance."
+  }
+];
 
   const [activeIndex, setActiveIndex] = useState(null);
 
