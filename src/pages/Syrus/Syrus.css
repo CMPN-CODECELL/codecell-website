@@ -550,124 +550,66 @@ button {
     color: white;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 2rem;
+.newCard {
     padding: 2rem;
-}
-
-.domain-card {
-    width: 300px;
+    margin: 2rem auto;
+    width: 80%;
     height: 380px;
-    background: url("../../assets/domain_bg_3.jpeg") no-repeat center center;
-    background-size: cover;
     border-radius: 12px;
-    position: relative;
-    overflow: hidden;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
     align-items: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    background: #ff000002;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.domain-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+.newCard:hover {
+    transform: translateY(-5px);
 }
 
-.domain-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0);
+.newCard_content {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.domain-card:hover::before {
-    backdrop-filter: blur(5px);
+
+.newCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.4);
 }
 
-.domainMainHeading {
-    margin: 1.5rem auto;
+.genAifintech {
     color: #fff;
     text-shadow: 3px 3px 0 #251473, -3px -3px 0 #f4143c, 0px 0px 5px #f4143c;
     font-family: "Veto Sans", serif;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 900;
     line-height: 1.4;
     transition: transform 0.3s ease-in-out;
 }
 
-.domain-card:hover .domainMainHeading {
+.domain-card:hover .genAifintech {
     transform: scale(1.3);
 }
 
-.topic-container {
-    display: flex;
-    border-radius: 20px;
-    border: 1px solid #f4143c;
-    padding: 2rem;
-    margin: 2rem;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.topic-container3 {
-    display: flex;
-    border-radius: 20px;
-    border: 1px solid #f4143c;
-    padding: 2rem;
-    margin: 2rem 2rem 0 2rem;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.topic-container:hover,
-.topic-container3:hover {
-    transform: scale3d(1.02, 1.02, 1.02);
-    box-shadow: 0 10px 20px rgba(181, 177, 177, 0.3);
-}
-
-.topic-content {
-    width: 60%;
-}
-
-.topic-content h1 {
-    font-size: 3rem;
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-    color: #f4143c;
-    letter-spacing: normal;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.topic-content p {
+.newCard_content p {
     font-size: 1.5rem;
     font-family: "Outfit", sans-serif;
-    line-height: 1.2;
+    line-height: 1.3;
     text-align: justify;
     color: #fff;
-}
-
-.topic-image {
-    width: 40%;
-}
-
-.topic-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 /*************Timeline Styles **************/
@@ -1261,46 +1203,58 @@ button {
         padding: 0 1rem;
     }
 
-    .domainMainHeading {
+    .newCard {
+        padding: 0.5rem;
+        margin: 0.5rem auto;
+        width: 95%;
+        border-radius: 12px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .newCard:hover {
+        transform: translateY(-5px);
+    }
+
+    .newCard_content {
         padding: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .topic-content h1 {
-        font-size: 2rem;
-        letter-spacing: normal;
-        text-align: center;
+
+    .newCard:hover {
+        transform: scale(1.01);
+        box-shadow: 0 5px 5px rgba(255, 0, 0, 0.4);
     }
 
-    .topic-content p {
-        font-size: 1rem;
+    .genAifintech {
+        color: #fff;
+        text-shadow: 3px 3px 0 #251473, -3px -3px 0 #f4143c, 0px 0px 5px #f4143c;
+        font-family: "Veto Sans", serif;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        font-weight: 900;
+        line-height: 1.4;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .domain-card:hover .genAifintech {
+        transform: scale(1.1);
+    }
+
+    .newCard_content p {
+        font-size: 1.2rem;
         font-family: "Outfit", sans-serif;
-        line-height: normal;
+        line-height: 1.3;
         text-align: justify;
         color: #fff;
-    }
-
-    .topic-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    .topic-container,
-    .topic-container3 {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .topic-content {
-        order: 1;
-        width: 100%;
-    }
-
-    .topic-image {
-        order: 2;
-        width: 100%;
     }
 
     /***********Sponsor Section****************/

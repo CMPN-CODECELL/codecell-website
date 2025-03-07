@@ -74,7 +74,7 @@ function Header() {
             <Nav.Link href="#domain" 
               className={activeLink === 'domain' ? 'active navbar-link' : 'navbar-link'} 
               onClick={() => onUpdateActiveLink('domain')}>
-              Domains
+              Theme
             </Nav.Link>
             {/* <Nav.Link href="#sponsors" 
               className={activeLink === 'sponsors' ? 'active navbar-link' : 'navbar-link'} 
