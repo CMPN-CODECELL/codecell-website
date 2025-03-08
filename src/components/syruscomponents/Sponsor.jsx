@@ -7,6 +7,11 @@ import Github from '../../assets/sponsors/Github.png';
 import InterviewBuddy from '../../assets/sponsors/InterviewBuddy.png';
 import InterviewCake from '../../assets/sponsors/InterviewCake.png';
 import XYZ from '../../assets/sponsors/XYZ.png';
+import Appwrite from '../../assets/sponsors/Appwrite.png';
+import VESITLogo from "../../assets/VESIT.png";
+import HundredYear from "../../assets/100_logo.png"
+import Habit from "../../assets/Habit_logo.png"
+import Iic from "../../assets/IIC_logo.png"
 
 const majorSponsors = [
   {
@@ -63,11 +68,17 @@ const associateSponsors = [
     id: 4,
     img: XYZ,
     alt: "xyz.png"
+  },
+  {
+    id: 5,
+    img: Appwrite,
+    alt: "appwrite.png"
   }
 ]
 
 function Sponsor() {
   return (
+    <>
     <section id="sponsors" className="bg-[#121211] py-6 text-white">
       <div className='container mx-auto px-2 mt-3 py-2'>
         <h2 className="internal-headings" data-text="OUR SPONSORS">OUR SPONSORS</h2>
@@ -113,6 +124,7 @@ function Sponsor() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 
