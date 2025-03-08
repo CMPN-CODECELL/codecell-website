@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import IntegrateModel from "./SpiderLogo/IntegrateModel";
 import VESITLogo from "../../assets/VESIT.png";
+import HundredYear from "../../assets/100_logo.png"
+import Habit from "../../assets/Habit_logo.png"
+import Iic from "../../assets/IIC_logo.png"
 import { useNavigate } from "react-router-dom";
 
 function Banner() {
@@ -11,6 +14,7 @@ function Banner() {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100 - Math.random() * 50);
   const [index, setIndex] = useState(1);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const toRotate = ["Integrate", "Collaborate", "Innovate"];
   const period = 600;
 
@@ -23,6 +27,15 @@ function Banner() {
       clearInterval(ticker);
     };
   }, [text]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -56,6 +69,14 @@ function Banner() {
       <Container maxWidth="lg">
         <Row>
           <Col xs={12} md={6} xl={7} className="banner-col-1">
+            {!isMobile && (
+            <div className="banner_logoContainer">
+              <img src={VESITLogo} alt="" className="college_logo" />
+              <img src={HundredYear} alt="" className="years100" />
+              <img src={Habit} alt="" className="habit" />
+              <img src={Iic} alt="" className="iic" />
+            </div>
+            )}
             <div className="content-container">
               {/* <div className="codecell-college-wrapper">
                     <img src={VESITLogo} alt="" className="codecell-college-logo" />
@@ -106,10 +127,15 @@ function Banner() {
               </Row>
             </div>
           </Col>
-          <Col xs={12} md={6} xl={5} className="spiderman_logo">
-            {/* <img src={SpiderMan} alt="SpiderMan" className="spiderman-image" /> */}
-            <IntegrateModel />
-          </Col>
+          {isMobile ? (<div className="banner_logoContainer">
+              <img src={VESITLogo} alt="" className="college_logo" />
+              <img src={HundredYear} alt="" className="years100" />
+              <img src={Habit} alt="" className="habit" />
+              <img src={Iic} alt="" className="iic" />
+            </div>) : (<Col xs={12} md={6} xl={5} className="spiderman_logo">
+              <IntegrateModel />
+            </Col>
+            )}
         </Row>
       </Container>
     </section>

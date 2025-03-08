@@ -262,6 +262,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 
+.banner_logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+
+    img {
+        filter: drop-shadow(-1px 2px 0 #ffffffa2);
+        width: 60px;
+        height: auto;
+    }
+
+    /* .college_logo {
+        width: 60px;
+        height: auto;
+    } */
+
+    .iic {
+        width: auto;
+        height: 80px;
+    }
+
+    .years100,
+    .habit {
+        width: auto;
+        height: 80px;
+    }
+}
+
 .banner {
     margin-top: 0;
     padding: 150px 40px 70px 40px;
@@ -278,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner-col-1 {
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-size: contain;
     position: relative;
     animation: fadeIn 1s ease-in-out;
@@ -723,7 +753,7 @@ button {
 
 .assosiateSponsorItems {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     margin-bottom: 1rem !important;
     align-items: center;
@@ -1048,6 +1078,19 @@ button {
             width: 80%;
         }
     }
+
+    .newCard {
+        padding: 0.5rem;
+        margin: 1rem auto;
+        width: 95%;
+        border-radius: 12px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
 }
 
 /*******************Media Queries****************/
@@ -1203,6 +1246,31 @@ button {
         padding: 0 1rem;
     }
 
+    .banner_logoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 1rem;
+        width: 90%;
+        margin: 1.5rem auto;
+
+        img {
+            width: 50px;
+        }
+
+        .iic {
+            width: auto;
+            height: 80px;
+        }
+
+        .years100,
+        .habit {
+            width: auto;
+            height: 80px;
+        }
+    }
+
     .newCard {
         padding: 0.5rem;
         margin: 0.5rem auto;
@@ -1314,6 +1382,7 @@ button {
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
+
 
     .sponsor_img {
         max-width: 180px;
