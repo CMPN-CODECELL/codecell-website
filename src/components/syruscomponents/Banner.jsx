@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import IntegrateModel from "./SpiderLogo/IntegrateModel";
 import VESITLogo from "../../assets/VESIT.png";
-import HundredYear from "../../assets/100_logo.png"
-import Habit from "../../assets/Habit_logo.png"
-import Iic from "../../assets/IIC_logo.png"
+import HundredYear from "../../assets/100_logo.png";
+import Habit from "../../assets/Habit_logo.png";
+import Iic from "../../assets/IIC_logo.png";
 import { useNavigate } from "react-router-dom";
 
 function Banner() {
@@ -32,7 +32,7 @@ function Banner() {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -70,12 +70,12 @@ function Banner() {
         <Row>
           <Col xs={12} md={6} xl={7} className="banner-col-1">
             {!isMobile && (
-            <div className="banner_logoContainer">
-              <img src={VESITLogo} alt="" className="college_logo" />
-              <img src={HundredYear} alt="" className="years100" />
-              <img src={Habit} alt="" className="habit" />
-              <img src={Iic} alt="" className="iic" />
-            </div>
+              <div className="banner_logoContainer">
+                <img src={VESITLogo} alt="" className="college_logo" />
+                <img src={HundredYear} alt="" className="years100" />
+                <img src={Habit} alt="" className="habit" />
+                <img src={Iic} alt="" className="iic" />
+              </div>
             )}
             <div className="content-container">
               {/* <div className="codecell-college-wrapper">
@@ -114,28 +114,30 @@ function Banner() {
                   CodeCell
                 </Button>
                 <Button
-                  className="mx-3"
-                  // onClick={() =>
-                  //   window.open(
-                  //     "https://unstop.com/p/syrus-hackathon-2025-codecell-tinkerers-of-computer-eng-dept-at-vesit-1420661",
-                  //     "_blank"
-                  //   )
-                  // }
+                  className=" mx-3"
+                  onClick={() =>
+                    navigate(
+                      "https://unstop.com/p/syrus-hackathon-2025-codecell-tinkerers-of-computer-eng-dept-at-vesit-1420661"
+                    )
+                  }
                 >
                   Register
                 </Button>
               </Row>
             </div>
           </Col>
-          {isMobile ? (<div className="banner_logoContainer">
+          {isMobile ? (
+            <div className="banner_logoContainer">
               <img src={VESITLogo} alt="" className="college_logo" />
               <img src={HundredYear} alt="" className="years100" />
               <img src={Habit} alt="" className="habit" />
               <img src={Iic} alt="" className="iic" />
-            </div>) : (<Col xs={12} md={6} xl={5} className="spiderman_logo">
+            </div>
+          ) : (
+            <Col xs={12} md={6} xl={5} className="spiderman_logo">
               <IntegrateModel />
             </Col>
-            )}
+          )}
         </Row>
       </Container>
     </section>
