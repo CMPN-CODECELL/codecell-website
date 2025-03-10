@@ -110,18 +110,26 @@ function Banner() {
                 current trends and pioneer new ones.
               </p>
               <Row xl={3} p={2} className="button-group">
-                <Button className=" mx-3" onClick={() => navigate("/")}>
-                  CodeCell
-                </Button>
                 <Button
                   className=" mx-3"
                   onClick={() =>
-                    navigate(
-                      "https://unstop.com/p/syrus-hackathon-2025-codecell-tinkerers-of-computer-eng-dept-at-vesit-1420661"
+                    window.open(
+                      "https://docs.google.com/document/d/1Y_SUeKG31A-sWs2ibs8VxeJsQ9tz0H6YjERyAX4ddeg/edit?usp=drivesdk"
                     )
                   }
                 >
-                  Register
+                  Steps to Register
+                </Button>
+                <Button
+                  className=" mx-3 registerUnstop"
+                  onClick={() =>
+                    window.open(
+                      "https://unstop.com/p/syrus-hackathon-2025-codecell-tinkerers-of-computer-eng-dept-at-vesit-1420661",
+                      "_blank"
+                    )
+                  }
+                >
+                  Register On Unstop
                 </Button>
               </Row>
             </div>
