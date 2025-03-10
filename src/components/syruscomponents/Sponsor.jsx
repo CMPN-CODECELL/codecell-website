@@ -8,10 +8,7 @@ import InterviewBuddy from '../../assets/sponsors/InterviewBuddy.png';
 import InterviewCake from '../../assets/sponsors/InterviewCake.png';
 import XYZ from '../../assets/sponsors/XYZ.png';
 import Appwrite from '../../assets/sponsors/Appwrite.png';
-import VESITLogo from "../../assets/VESIT.png";
-import HundredYear from "../../assets/100_logo.png"
-import Habit from "../../assets/Habit_logo.png"
-import Iic from "../../assets/IIC_logo.png"
+import Rotary from "../../assets/sponsors/Rotary.png";
 
 const majorSponsors = [
   {
@@ -44,6 +41,14 @@ const majorSponsors = [
     sponsorType: "Networking",
     filerText: "Partner",
     img: Sprect,
+    alt: "Sprect.png",
+  },
+  {
+    id: 5,
+    className: "sprectDiv",
+    sponsorType: "Sustainability",
+    filerText: "Partner",
+    img: Rotary,
     alt: "Sprect.png",
   }
 ]

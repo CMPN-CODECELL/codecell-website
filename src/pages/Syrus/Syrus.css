@@ -714,39 +714,55 @@ button {
     gap: 3rem;
     width: 100%;
     max-width: 900px;
+}
 
-    h3 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        text-align: center;
-        color: white;
-        margin-bottom: 1.5rem;
-        font-family: 'Outfit', sans-serif;
-    }
+.sponsor-container h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 .mainSponsorgrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
     margin-bottom: 1rem !important;
-    align-items: end;
+    text-align: center;
+}
+
+.mainSponsorgrid div {
+    flex: 1 1 calc(33.333% - 3rem);
+    max-width: calc(33.333% - 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
 
-    h3 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-        font-weight: bold;
-        text-align: center;
-        color: white;
-        font-family: 'Outfit', sans-serif;
-    }
+.mainSponsorgrid h3 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: bold;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
 
-    .sponsor_img {
-        margin: 0 auto;
-        height: 80%;
-        width: 80%;
-    }
+.sponsor_img {
+    margin: 0 auto;
+    height: 70%;
+    width: 70%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.sponsor_img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .break-text {
@@ -757,33 +773,30 @@ button {
     padding-block: 0.5rem;
 }
 
-
 .assosiateSponsorItems {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     margin-bottom: 1rem !important;
+}
+
+.assosiateSponsorItems div {
+    flex: 1 1 calc(33.333% - 3rem);
+    max-width: calc(33.333% - 3rem);
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .Certificate_sponserItems {
     display: flex;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     margin: 0 auto;
-}
-
-.sponsor_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.sponsor_img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /*********************Sponsor Us**********************/
@@ -1069,21 +1082,28 @@ button {
 
 @media(600px<=width<=1300px) {
     .mainSponsorgrid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
+    }
 
-        h3 {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.3rem;
-        }
+    .mainSponsorgrid div {
+        flex: 1 1 calc(33.33% - 1rem);
+        max-width: calc(33.33% - 1rem);
+    }
 
-        .sponsor_img {
-            margin: 0 auto;
-            height: 80%;
-            width: 80%;
-        }
+    .mainSponsorgrid h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+
+    .sponsor_img {
+        margin: 0 auto;
+        height: 80%;
+        width: 80%;
     }
 
     .newCard {
@@ -1363,21 +1383,28 @@ button {
     }
 
     .mainSponsorgrid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 1rem;
+    }
 
-        h3 {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 0.3rem;
-        }
+    .mainSponsorgrid div {
+        flex: 1 1 calc(33.33% - 1rem);
+        max-width: 100%;
+    }
 
-        .sponsor_img {
-            margin: 0 auto;
-            height: 80%;
-            width: 80%;
-        }
+    .mainSponsorgrid h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+
+    .sponsor_img {
+        margin: 0 auto;
+        height: 80%;
+        width: 80%;
     }
 
     .CertificateCategory {
@@ -1392,11 +1419,22 @@ button {
         margin: 0 auto !important;
     }
 
+
     .assosiateSponsorItems {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
+    .assosiateSponsorItems div {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(60% - 1rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .sponsor_img {
         max-width: 180px;
