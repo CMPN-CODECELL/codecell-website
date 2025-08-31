@@ -28,11 +28,12 @@ const LandingScreen = () => {
         </GlassContainer>
         <div className="landing-buttons">
           <Button className="upcoming-button" href="#upcoming-events">
-            Upcoming {window.innerWidth > 1350 && "Workshops"}
+            Upcoming <br />
+            {window.innerWidth > 1350 && "Workshops"}
           </Button>
-          <Button className="syrus-button-landing" href="/syrus">
+          {/* <Button className="syrus-button-landing" href="/syrus">
             Syrus'25
-          </Button>
+          </Button> */}
         </div>
       </div>
       <div className="codecell-model">

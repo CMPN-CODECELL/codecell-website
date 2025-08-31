@@ -65,7 +65,7 @@
   border: 2px solid var(--primary);
   text-align: center;
   padding: 0.5rem;
-  padding-inline: 1.5rem;
+  padding-inline: 5rem;
   transition: transform 0.2s ease-in-out;
   border: 2px solid transparent;
   /* color: white !important;

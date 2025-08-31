@@ -2,10 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
 import CodecellLogo from "../../assets/codecell.svg";
-import { useEffect } from "react";
 
 function CodecellNav() {
   return (
@@ -34,9 +32,9 @@ function CodecellNav() {
       </Navbar.Toggle>
       <Navbar.Collapse className="nav-items-wrapper" id="responsive-navbar-nav">
         <div className="nav-items">
-          <div className="nav-item syrus-nav">
+          {/* <div className="nav-item syrus-nav">
             <a href="/syrus">Syrus'25</a>
-          </div>
+          </div> */}
           <div className="nav-item">
             <a href="/#upcoming-events">Upcoming</a>
           </div>
