@@ -1,9 +1,15 @@
 [
   {
     "name": "Chinmay Desai",
-    "designation": "Sr. Tech Manager",
+    "designation": "Student Head",
     "social": "https://www.linkedin.com/in/chinmay-desai-b72005233/",
     "photo": "/teamImages/BE/ChinmayDesai.jpg"
+  },
+  {
+    "name": "Eshan Vijay",
+    "designation": "Student Co Head",
+    "social": "https://www.linkedin.com/in/eshanvijay/",
+    "photo": "/teamImages/BE/EshanVijay.jpg"
   },
   {
     "name": "Hannan Chougle",
@@ -64,12 +70,6 @@
     "designation": "Sr. Graphics Designer",
     "social": "https://www.linkedin.com/in/atharva-deore-68283a256/",
     "photo": "/teamImages/BE/AtharvaDeore.jpg"
-  },
-  {
-    "name": "Eshan Vijay",
-    "designation": "Sr. Ambassador",
-    "social": "https://www.linkedin.com/in/eshanvijay/",
-    "photo": "/teamImages/BE/EshanVijay.jpg"
   },
   {
     "name": "Shaanveer Singh",
