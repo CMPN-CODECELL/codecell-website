@@ -115,5 +115,20 @@
     "event-desc": "Students learned MCP for tool integration with Claude, Git and  Discord, and Google ADK for building powerful AI agents like email responders and hackathon fetchers.",
     "event-time": "Aug 2025",
     "event-guest": "Hannan Chougle, Harshavardhan Khamkar, Aanchal Gupta"
+  },
+  {
+    "event-name": "DSA HeadStart",
+    "event-image": "dsa-headstart.jpeg",
+    "event-desc": "A two-day DSA Bootcamp covered arrays, 2D arrays, stacks, queues, hashmaps, two-pointers, and subarrays with beginner-friendly lectures and coding contests for hands-on learning.",
+    "event-time": "Sept 2025",
+    "event-guest": "Veda Patki, Kushagra Kumar, Sahil Tanwani, Gaurang Gade"
+  },
+  {
+    "event-name": "Path To GSoC",
+    "event-image": "path-to-gsoc.jpg",
+    "event-desc": "A hands-on session introducing students to open-source development and guiding them through the Google Summer of Code (GSoC) journey with insights from mentors and steps to start contributing to global projects.",
+    "event-time": "Oct 2025",
+    "event-guest": "Sanjay Sargam GSoC Mentor '25 | GSoC Contributor '24 @AnkiDroid"
   }
+  
 ]
