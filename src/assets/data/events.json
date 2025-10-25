@@ -117,6 +117,13 @@
     "event-guest": "Hannan Chougle, Harshavardhan Khamkar, Aanchal Gupta"
   },
   {
+    "event-name": "Unlocking innovation with GitHub Copilot",
+    "event-image": "github-event.jpeg",
+    "event-desc": "The session covered Git and GitHub fundamentals, including repositories, branches, pull requests, and concurrency, while demonstrating how GitHub Copilot enhances coding efficiency and is transforming workflows across the tech industry.",
+    "event-time": "Aug 2025",
+    "event-guest": "Dhanashree Chavan (Senior Enterprise Advocate @ GitHub"
+  }, 
+  {
     "event-name": "DSA HeadStart",
     "event-image": "dsa-headstart.jpeg",
     "event-desc": "A two-day DSA Bootcamp covered arrays, 2D arrays, stacks, queues, hashmaps, two-pointers, and subarrays with beginner-friendly lectures and coding contests for hands-on learning.",
