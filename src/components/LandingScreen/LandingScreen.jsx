@@ -5,8 +5,11 @@ import GlassContainer from "../GlassContainer/GlassContainer";
 import VESITLogo from "../../assets/VESIT.png";
 import "./LandingScreen.css";
 
-const LandingScreen = () => {
-  console.log(window.innerWidth);
+const LandingScreen = ({ workshops = [] }) => {
+  const hasWorkshops = Array.isArray(workshops) && workshops.length > 0;
+  const showWorkshopsLabel =
+    typeof window !== "undefined" && window.innerWidth > 1350;
+
   return (
     <div className="landing-screen" id="landing-screen">
       <div className="info-section">
@@ -27,10 +30,12 @@ const LandingScreen = () => {
           </div>
         </GlassContainer>
         <div className="landing-buttons">
-          <Button className="upcoming-button" href="#upcoming-events">
-            Upcoming <br />
-            {window.innerWidth > 1350 && "Workshops"}
-          </Button>
+          {hasWorkshops && (
+            <Button className="upcoming-button" href="#upcoming-events">
+              Upcoming <br />
+              {showWorkshopsLabel && "Workshops"}
+            </Button>
+          )}
           {/* <Button className="syrus-button-landing" href="/syrus">
             Syrus'25
           </Button> */}
