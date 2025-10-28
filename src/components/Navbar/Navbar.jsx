@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
 import CodecellLogo from "../../assets/codecell.svg";
 
-function CodecellNav() {
+function CodecellNav({ isUpcomingWorkshops = false }) {
   return (
     <Navbar
       collapseOnSelect
@@ -35,9 +35,11 @@ function CodecellNav() {
           {/* <div className="nav-item syrus-nav">
             <a href="/syrus">Syrus'25</a>
           </div> */}
-          <div className="nav-item">
-            <a href="/#upcoming-events">Upcoming</a>
-          </div>
+          {isUpcomingWorkshops && (
+            <div className="nav-item">
+              <a href="/#upcoming-events">Upcoming</a>
+            </div>
+          )}
           <div className="nav-item">
             <a href="/team">Team</a>
           </div>

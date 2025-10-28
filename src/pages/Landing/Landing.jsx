@@ -48,7 +48,7 @@ function Landing() {
       {/* <MatrixRainingCode /> */}
       <Matrix />
       <div className="components">
-        <CodecellNav />
+        <CodecellNav isUpcomingWorkshops={workshops.length > 0} />
         <LandingScreen workshops={workshops} />
         <UpcomingWorkshops workshops={workshops} />
         <Events />
