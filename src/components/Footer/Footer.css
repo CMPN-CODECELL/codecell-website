@@ -68,6 +68,16 @@
   text-align: center;
 }
 
+.footer-info a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-info a:hover {
+  filter: brightness(1.2);
+}
+
 .footer-socials {
   display: flex;
   gap: 1rem;

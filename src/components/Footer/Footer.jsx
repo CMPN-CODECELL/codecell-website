@@ -22,7 +22,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-info">
-        © 2024-2025 CodeCell VESIT. All Rights Reserved.
+        © 2024-2025 CodeCell VESIT. All Rights Reserved. |{" "}
+        <a href="/code-of-conduct">Code of Conduct</a>
       </div>
       <div className="footer-socials">
         <a
