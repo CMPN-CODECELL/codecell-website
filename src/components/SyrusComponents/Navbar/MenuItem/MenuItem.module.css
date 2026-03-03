@@ -1,0 +1,38 @@
+/* MenuItem.module.css */
+
+.menuItem {
+  font-family: var(--syrus-display-font);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 12px 0;
+  padding: 6px 0;
+  opacity: 0;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.menuItem:hover,
+.active {
+  background: linear-gradient(to bottom, #fe519f, #fc815b, #ffc641);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active {
+  filter: drop-shadow(0 0 6px rgba(254, 81, 159, 0.5))
+    drop-shadow(0 0 18px rgba(255, 198, 65, 0.25));
+}
+
+.menuItem:hover {
+  transform: translateX(6px);
+}

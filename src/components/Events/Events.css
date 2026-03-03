@@ -14,7 +14,7 @@
   padding-inline: 2rem !important;
   color: white;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .events-wrapper {
@@ -174,7 +174,9 @@
   font-weight: 700;
   font-size: 1.2rem;
   border: 2px solid transparent;
-  transition: background 0.1s ease-in-out, color 0.1s ease;
+  transition:
+    background 0.1s ease-in-out,
+    color 0.1s ease;
   border: 2px solid var(--primary-alpha);
 }
 

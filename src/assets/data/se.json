@@ -1,1 +1,71 @@
-[]
+[
+  {
+    "name": "Kushagra Kumar",
+    "designation": "SE Tech Manager",
+    "social": "https://www.linkedin.com/in/kushagra-kumar-0046962a0/",
+    "photo": "/teamImages/SE/Kushagra_Kumar.webp"
+  },
+  {
+    "name": "Poorvaja Joshi",
+    "designation": "SE Tech Manager",
+    "social": "https://www.linkedin.com/in/poorvaja-joshi/",
+    "photo": "/teamImages/SE/Poorvaja_Joshi.webp"
+  },
+  {
+    "name": "Jagdish Padhi",
+    "designation": "SE Tech Manager",
+    "social": "https://www.linkedin.com/in/jagdish-padhi",
+    "photo": "/teamImages/SE/Jagdish_Padhi.webp"
+  },
+  
+  {
+    "name": "Apurva Gokhale",
+    "designation": "SE PR Manager",
+    "social": "https://www.linkedin.com/in/apurva-gokhale-47528a32a",
+    "photo": "/teamImages/SE/Apoorva_Gokhale.webp"
+  },
+  {
+    "name": "Nikunj Patil",
+    "designation": "SE PR Manager",
+    "social": "https://www.linkedin.com/in/nikunj-patil/",
+    "photo": "/teamImages/SE/Nikunj_Patil.webp"
+  },
+  {
+    "name": "Bhoomi Singh",
+    "designation": "SE PR Manager",
+    "social": "https://www.linkedin.com/in/bhoomi-singh-1a5358242/",
+    "photo": "/teamImages/SE/Bhoomi_Singh.webp"
+  },
+  
+  {
+    "name": "Rugved Vichare",
+    "designation": "SE Ambassador",
+    "social": "https://www.linkedin.com/in/rugved-vichare-b22144220/",
+    "photo": "/teamImages/SE/Rugved_Vichare.webp"
+  },
+  {
+    "name": "Ritam Chattopadhyay",
+    "designation": "SE Ambassador",
+    "social": "https://www.linkedin.com/in/ritam-chattopadhyay/",
+    "photo": "/teamImages/SE/Ritam_Chattopadhyay.webp"
+  },
+  {
+    "name": "Saman Pandey",
+    "designation": "SE Graphics Designer",
+    "social": "https://www.linkedin.com/in/saman-pandey/",
+    "photo": "/teamImages/SE/Saman_Pandey.webp"
+  },
+  {
+    "name": "Niharika Pawar",
+    "designation": "SE Graphics Designer",
+    "social": "https://www.linkedin.com/in/niharika-pawar-a20792370/",
+    "photo": "/teamImages/SE/Niharika_Pawar.webp"
+  },
+  {
+    "name": "Meet Phulwani",
+    "designation": "SE Graphics Designer",
+    "social": "https://www.linkedin.com/in/meet-phulwani-58b438343",
+    "photo": "/teamImages/SE/Meet_Phulwani.webp"
+  }
+
+]

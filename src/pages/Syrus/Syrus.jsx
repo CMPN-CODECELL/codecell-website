@@ -1,37 +1,57 @@
-import React,{useEffect} from 'react';
-import './Syrus.css'
-import Banner from "../../components/syruscomponents/Banner"
-import Header from "../../components/syruscomponents/Header"
-import Domain from "../../components/syruscomponents/Domain"
-import Timeline from "../../components/syruscomponents/Timeline"
-import Gallery from "../../components/syruscomponents/Gallery"
-import Faq from "../../components/syruscomponents/Faq"
-import SyrusFooter from "../../components/syruscomponents/SyrusFooter"
-import Sponsor from "../../components/syruscomponents/Sponsor"
-import SyrusScrollToTop from "../../components/syruscomponents/SyrusScrollToTop"
-import SponsorUs from '../../components/syruscomponents/SponsorUs';
+import React, { useEffect, useState } from "react";
+import Hero from "../../components/SyrusComponents/Hero/Hero";
+import Domain from "../../components/SyrusComponents/Domain/Domain";
+import Timeline from "../../components/SyrusComponents/Timeline/Timeline";
+import Gallery from "../../components/SyrusComponents/Gallery/Gallery";
+import Faq from "../../components/SyrusComponents/Faq/Faq";
+import SyrusFooter from "../../components/SyrusComponents/SyrusFooter/SyrusFooter";
+import Sponsor from "../../components/SyrusComponents/Sponsor/Sponsor";
+import PrizePool from "../../components/SyrusComponents/PrizePool/PrizePool";
+import SyrusScrollToTop from "../../components/SyrusComponents/SyrusScrollToTop/SyrusScrollToTop";
+import Navbar from "../../components/SyrusComponents/Navbar";
+import CallAMentor from "../../components/SyrusComponents/CallAMentor/CallAMentor";
+import ScrollReveal from "../../components/SyrusComponents/ScrollReveal/ScrollReveal";
+import "./Syrus.css";
+
+const REDIRECT_TO_UNSTOP_LINK = import.meta.env.VITE_UNSTOP_REG_FORM_URL;
+const REDIRECT_TO_UNSTOP_FLAG = false;
 
 function Syrus() {
-  useEffect(() => {
-        document.body.classList.add("syrus-page");
+  const [mentorOpen, setMentorOpen] = useState(false);
 
-        return () => {
-            document.body.classList.remove("syrus-page");
-        };
-    }, []);
+  useEffect(() => {
+    if (REDIRECT_TO_UNSTOP_FLAG) {
+      window.location.href = REDIRECT_TO_UNSTOP_LINK;
+    }
+  }, []);
+
   return (
-    <>
-        <Header />
-        <Banner />
+    <div className="syrus-page">
+      <Navbar />
+      <Hero onCallMentor={() => setMentorOpen(true)} />
+      <ScrollReveal>
         <Sponsor />
+      </ScrollReveal>
+      <ScrollReveal>
+        <PrizePool />
+      </ScrollReveal>
+      <ScrollReveal>
         <Timeline />
+      </ScrollReveal>
+      <ScrollReveal>
         <Domain />
-        <Gallery />
+      </ScrollReveal>
+      <ScrollReveal>
         <Faq />
-        <SyrusFooter />
-        <SyrusScrollToTop />
-    </>
-  )
+      </ScrollReveal>
+      <ScrollReveal>
+        <Gallery />
+      </ScrollReveal>
+      <SyrusFooter />
+      <SyrusScrollToTop />
+      <CallAMentor isOpen={mentorOpen} onClose={() => setMentorOpen(false)} />
+    </div>
+  );
 }
 
-export default Syrus
+export default Syrus;

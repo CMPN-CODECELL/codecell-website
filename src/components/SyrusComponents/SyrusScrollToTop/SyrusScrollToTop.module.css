@@ -1,0 +1,93 @@
+/* SyrusScrollToTop — GTA 6 themed */
+.button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: transparent;
+  z-index: 1000;
+  overflow: hidden;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+
+/* Rotating conic-gradient border (same as heroBtn) */
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(#927fff, #fe519f, #fc815b, #ffc641, #927fff);
+  animation: borderSpin 4s linear infinite;
+  z-index: -1;
+}
+
+/* Inner fill — dark center leaving 2px gradient border */
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    #05050a;
+  z-index: 0;
+}
+
+/* Arrow sits above the pseudo-elements */
+.arrow {
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow:
+    0 0 20px rgba(146, 127, 255, 0.3),
+    0 0 40px rgba(254, 81, 159, 0.2),
+    0 0 60px rgba(255, 198, 65, 0.1);
+}
+
+.button:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes borderSpin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .button {
+    width: 38px;
+    height: 38px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

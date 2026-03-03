@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { MatrixRainingCode } from "../../components";
 import "./Landing.css";
 import LandingScreen from "../../components/LandingScreen/LandingScreen";
 import CodecellNav from "../../components/Navbar/Navbar";
-import UpcomingWorkshops from "../../components/UpcomingWorkshops/UpcomingWorkshops";
+import UpcomingEvents from "../../components/UpcomingEvents/UpcomingEvents";
 import Footer from "../../components/Footer/Footer";
 import Events from "../../components/Events/Events";
 import ContactUs from "../../components/ContactUs/ContactUs";
@@ -12,7 +11,7 @@ import Matrix from "../../components/MatrixRainingCode/Matrix";
 import ScrollToTopButton from "../../components/misc/ScrollToTop/ScrollToTop";
 
 function Landing() {
-  const [workshops, setWorkshops] = useState([]);
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     const anchor = window.location.hash.slice(1);
@@ -25,22 +24,24 @@ function Landing() {
   }, []);
 
   useEffect(() => {
-    const url = import.meta.env.VITE_WORKSHOPS_RAW_LINK;
+    const url = import.meta.env.VITE_EVENTS_RAW_LINK;
 
     if (!url) {
       return;
     }
 
-    axios
-      .get(url)
-      .then((data) => {
-        const fetchedWorkshops = Array.isArray(data.data) ? data.data : [];
-        setWorkshops(fetchedWorkshops);
-      })
-      .catch((err) => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch(url);
+        const fetchedEvents = await response.json();
+        setEvents(fetchedEvents);
+      } catch (err) {
         console.log(err.message);
-        setWorkshops([]);
-      });
+        setEvents([]);
+      }
+    };
+
+    fetchEvents();
   }, []);
 
   return (
@@ -48,9 +49,9 @@ function Landing() {
       {/* <MatrixRainingCode /> */}
       <Matrix />
       <div className="components">
-        <CodecellNav isUpcomingWorkshops={workshops.length > 0} />
-        <LandingScreen workshops={workshops} />
-        <UpcomingWorkshops workshops={workshops} />
+        <CodecellNav isUpcomingEvents={events.length > 0} />
+        <LandingScreen events={events} />
+        <UpcomingEvents events={events} />
         <Events />
         <ContactUs />
         <Footer />

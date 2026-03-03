@@ -3,54 +3,79 @@
     "name": "Pankaj Gupta",
     "designation": "Jr. Tech Manager",
     "social": "https://www.linkedin.com/in/pankajgupta0695/",
-    "photo": "/teamImages/TE/PankajGupta.jpg"
+    "photo": "/teamImages/TE/Pankaj_Gupta.webp"
   },
   {
-    "name": "Yash Katiyara",
+    "name": "Harshavardhan Khamkar",
     "designation": "Jr. Tech Manager",
-    "social": "https://www.linkedin.com/in/yash-katiyara/",
-    "photo": "/teamImages/TE/YashKatiyara.jpg"
+    "social": "https://www.linkedin.com/in/harshavardhan-khamkar/",
+    "photo": "/teamImages/TE/Harshavardhan_Khamkar.webp"
   },
   {
     "name": "Sahil Tanwani",
     "designation": "Jr. Tech Manager",
     "social": "https://www.linkedin.com/in/sahil-tanwani-bb44012b4/",
-    "photo": "/teamImages/TE/SahilTanwani.jpg"
+    "photo": "/teamImages/TE/Sahil_Tanwani.webp"
   },
   {
     "name": "Veda Patki",
     "designation": "Jr. Tech Manager",
     "social": "https://www.linkedin.com/in/veda-patki-07974b319/",
-    "photo": "/teamImages/TE/VedaPatki.jpg"
+    "photo": "/teamImages/TE/Veda_Patki.webp"
+  },
+  {
+    "name": "Yash Katiyara",
+    "designation": "Jr. Tech Manager",
+    "social": "https://www.linkedin.com/in/yash-katiyara/",
+    "photo": "/teamImages/TE/Yash_Katiyara.webp"
+  },
+  {
+    "name": "Om Mhatre",
+    "designation": "Jr. Tech Manager",
+    "social": "https://www.linkedin.com/in/om-mhatre-947b332a2/",
+    "photo": "/teamImages/TE/Om_Mhatre.webp"
   },
   {
     "name": "Harshita Sewani",
     "designation": "Jr. PR Manager",
     "social": "https://www.linkedin.com/in/harshita-sewani-64b26730a/",
-    "photo": "/teamImages/TE/HarshitaSewani.jpg"
+    "photo": "/teamImages/TE/Harshita_Sewani.webp"
   },
   {
     "name": "Aanchal Gupta",
     "designation": "Jr. PR Manager",
     "social": "https://www.linkedin.com/in/aanchal-gupta-4b710419b/",
-    "photo": "/teamImages/TE/AanchalGupta.jpg"
+    "photo": "/teamImages/TE/Aanchal_Gupta.webp"
   },
   {
-    "name": "Aliza Khan",
-    "designation": "Jr. Graphics Designer",
-    "social": "https://www.linkedin.com/in/aliza-khan-73a66a283/",
-    "photo": "/teamImages/TE/AlizaKhan.jpg"
+    "name": "Vedant Mhatre",
+    "designation": "Jr. PR Manager",
+    "social": "https://www.linkedin.com/in/vedant-mhatre-16914b325",
+    "photo": "/teamImages/TE/Vedant_Mhatre.webp"
   },
+
   {
     "name": "Gaurang Gade",
     "designation": "Jr. Ambassador",
     "social": "https://www.linkedin.com/in/gaurang-gade-43b08628b/",
-    "photo": "/teamImages/TE/GaurangGade.jpg"
+    "photo": "/teamImages/TE/Gaurang_Gade.webp"
+  },
+  {
+    "name": "Riddhi Menghrajani",
+    "designation": "Jr. Ambassador",
+    "social": "",
+    "photo": "/teamImages/TE/Riddhi_Menghrajani.webp"
   },
   {
     "name": "Priyanka Ochaney",
     "designation": "Jr. Ambassador",
     "social": "https://www.linkedin.com/in/priyanka-ochaney-a14b40274/",
-    "photo": "/teamImages/TE/PriyankaOchaney.jpg"
+    "photo": "/teamImages/TE/Priyanka_Ochaney.webp"
+  },
+  {
+    "name": "Garv Chandnani",
+    "designation": "Jr. Graphics Designer",
+    "social": "https://www.linkedin.com/in/garvchandnani2255/",
+    "photo": "/teamImages/TE/Garv_Chandnani.webp"
   }
 ]

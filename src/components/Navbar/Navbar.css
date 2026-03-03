@@ -1,14 +1,12 @@
 .codecell-nav {
-  padding-inline: 6rem;
+  padding-inline: 6rem; /* reduce default navbar width/padding */
   height: 12vh !important;
   min-height: 80px;
   font-size: 1.4rem !important;
   background: var(--dark-alpha) !important;
   color: white !important;
-  backdrop-filter: blur(5px);
   font-family: "Press Start 2P", sans-serif;
   border-bottom: 1px solid var(--primary);
-  /* border-top: 1px solid var(--primary); */
   font-weight: 100;
 }
 .nav-items-wrapper {
@@ -24,7 +22,6 @@
 
 .navbar-title .codecell-logo {
   width: clamp(3.5rem, 4.75vw, 4.5rem);
-  height: clamp(3.5rem, 4.75vw, 4.5rem);
 }
 
 .navbar-title .vesit-logo {
@@ -42,19 +39,23 @@
   font-family: "Press Start 2P", sans-serif !important;
   font-size: 1.5rem;
   color: white !important;
+  height: 80px;
+  flex-shrink: 0;
 }
 
 .navbar-toggler {
   outline-style: none !important;
   box-shadow: none !important;
   border-color: transparent !important;
+  height: 80px;
+  flex-shrink: 0;
 }
 
 .nav-item a {
   text-decoration: none;
   color: white;
   transition: color 0.2s ease-out;
-  font-size: 1.3rem;
+  font-size: 1.3rem; /* +40% */
 }
 
 .nav-item {
@@ -72,21 +73,31 @@
   /* text-decoration: underline; */
 }
 
+.nav-item.syrus-nav a {
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.nav-item.syrus-nav:hover {
+  transform: translateY(-3px);
+}
+
 .nav-item.syrus-nav:hover a {
-  transform: translate(0.05em, 0.05em);
-  filter: drop-shadow(3px 3px 0px #313f97);
-  color: red;
+  color: white;
+  text-shadow:
+    0 0 8px rgba(255, 179, 0, 0.6),
+    0 0 20px rgba(255, 45, 138, 0.4),
+    0 0 40px rgba(123, 104, 238, 0.3),
+    2px 2px 0px rgba(255, 45, 138, 0.5);
+  filter: drop-shadow(0 0 10px rgba(255, 112, 67, 0.3))
+    drop-shadow(0 0 20px rgba(123, 104, 238, 0.15));
 }
 
 @media screen and (max-width: 1399px) {
-  .nav-item.syrus-nav a {
-    transform: translate(0.05em, 0.05em);
-    filter: drop-shadow(3px 3px 0px #313f97);
-    color: red;
-  }
-
   .codecell-nav {
-    height: fit-content !important;
+    min-height: none;
+    height: auto !important;
   }
   .nav-items {
     padding-right: 1rem;
@@ -94,6 +105,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: end;
+  }
+  .nav-item a {
+    font-size: 1.64rem; /* scaled 40% but slightly reduced for medium screens */
+  }
+  .nav-item.syrus-nav a {
+    text-shadow:
+      0 0 8px rgba(255, 179, 0, 0.6),
+      0 0 20px rgba(255, 45, 138, 0.4),
+      0 0 40px rgba(123, 104, 238, 0.3),
+      2px 2px 0px rgba(255, 45, 138, 0.5);
   }
 }
 
@@ -105,13 +126,19 @@
 
 @media screen and (max-width: 545px) {
   .codecell-nav {
-    padding-inline: 2%;
+    padding-inline: 1%;
   }
   .navbar-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .navbar-title img {
     width: 3.25rem !important;
+  }
+  .nav-item a {
+    font-size: 1.4rem; /* scaled up from earlier mobile size */
+  }
+  .nav-item.syrus-nav a {
+    font-size: 2.3rem;
   }
 }
 

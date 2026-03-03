@@ -4,6 +4,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 
+@font-face {
+  font-family: "ChaletLondon";
+  src: url("/fonts/Chalet-London.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ChaletNewYork";
+  src: url("/fonts/Chalet-NewYork.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ChaletComprime";
+  src: url("/fonts/Chalet-Comprime.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pricedown";
+  src: url("/fonts/Pricedown.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SignPainter";
+  src: url("/fonts/SignPainter.ttf") format("truetype");
+}
+
+
 /* Color Pallete */
 * {
   /* Site variables */
@@ -20,4 +46,90 @@
 
   /* Toast variables */
   --toastify-color-dark: var(--secondary);
+
+  /************** Variables for Syrus Website pages ****************/
+
+  /* State colors */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+
+  /* borders & radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  --border-light: 1px solid rgba(255, 255, 255, 0.1);
+  --border-dark: 1px solid rgba(0, 0, 0, 0.1);
+
+  /* shadow for cards */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --syrus-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  /* transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.4s ease;
+  --transition-slow: 0.6s ease;
+
+  /* Primary Colors */
+  --primary-syrus-bg: #000000;
+  --primary-syrus-text: #ffffff;
+  --primary-syrus-accent: #ffffff;
+
+  /* Secondary  Colors */
+  --secondary-syrus-bg: #111111;
+  --secondary-syrus-text: #aaaaaa;
+  --secondary-syrus-border: #333333;
+
+  /* Tertiary Colors */
+  --tertiary-syrus-bg: #0a0a0a;
+  --tertiary-syrus-text: #cccccc;
+  --tertiary-syrus-accent: #555555;
+
+  /* Syrus Fonts */
+  --syrus-primary-font: "ChaletLondon", serif;
+  --syrus-primary2-font: "ChaletComprime", serif;
+  --syrus-primary3-font: "ChaletNewYork", serif;
+  --syrus-secondary-font: "SignPainter", cursive;
+  --syrus-display-font: "Pricedown", serif;
+
+  /* Syrus Font Sizes */
+  --syrus-heading-xl: clamp(2.5rem, 8vw, 4rem);
+  --syrus-heading-lg: clamp(2rem, 5vw, 3rem);
+  --syrus-heading-md: clamp(1.5rem, 4vw, 2rem);
+  --syrus-heading-sm: 1.3rem;
+  --syrus-text-lg: 1.2rem;
+  --syrus-text-md: 1.05rem;
+  --syrus-text-sm: 0.95rem;
+  --syrus-text-xs: 0.9rem;
+  --syrus-text-xxs: 0.75rem;
+
+  /* Syrus Font Weights */
+  --syrus-font-weight-light: 300;
+  --syrus-font-weight-regular: 400;
+  --syrus-font-weight-medium: 500;
+  --syrus-font-weight-semibold: 600;
+  --syrus-font-weight-bold: 700;
+
+  /* Syrus Spacing */
+  --syrus-spacing-section: 80px;
+  --syrus-spacing-large: 50px;
+  --syrus-spacing-medium: 30px;
+  --syrus-spacing-small: 20px;
+  --syrus-spacing-xs: 12px;
+
+  /* Syrus Letter Spacing */
+  --syrus-letter-spacing-lg: 3px;
+  --syrus-letter-spacing-md: 2px;
+  --syrus-letter-spacing-sm: 0.5px;
+
+  /* Syrus Borders */
+  --syrus-border-light: 1px solid var(--secondary-syrus-border);
+  --syrus-border-hover: 1px solid var(--tertiary-syrus-accent);
+
+  /* Syrus Line Height */
+  --syrus-line-height-tight: 1.4;
+  --syrus-line-height-normal: 1.6;
+  --syrus-line-height-relaxed: 1.7;
 }

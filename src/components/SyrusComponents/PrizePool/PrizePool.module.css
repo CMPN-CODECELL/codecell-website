@@ -1,0 +1,251 @@
+/* ── Prize Pool Section (GTA Theme) ── */
+
+.prizeSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 100px 0 40px;
+  background: black url("/GTA/prizepool-bg.webp") center/cover no-repeat;
+  background-attachment: fixed;
+  color: var(--primary-syrus-text);
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    inset 0 250px 180px -60px rgba(0, 0, 0, 1),
+    inset 0 -250px 180px -60px rgba(0, 0, 0, 1);
+}
+
+.prizeSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.prizeSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 30%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Title ── */
+.tiltPlate {
+  width: clamp(200px, 50vw, 280px);
+  margin: 0 auto;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+/* ── Amount ── */
+.amountWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: -60px;
+}
+
+.amount {
+  font-family: var(--syrus-display-font) !important;
+  font-size: clamp(7rem, 18vw, 13rem) !important;
+  font-weight: 900 !important;
+  color: #f6c316;
+  letter-spacing: 0.01em;
+  -webkit-text-stroke: 4px #232b1b;
+  text-shadow:
+    0 2px 0 #232b1b,
+    0 0 24px #000a,
+    0 8px 32px #000c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.02;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.currency {
+  margin-right: 0.15em;
+}
+
+/* ── Tagline ── */
+.tagline {
+  margin-top: 50px;
+  font-family: var(--syrus-primary-font);
+  font-size: var(--syrus-text-md);
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.89);
+  text-transform: uppercase;
+}
+
+/* ── Perks Line ── */
+.perksLine {
+  margin-top: 40px;
+  font-family: var(--syrus-primary3-font);
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.moneyStarArt {
+  position: absolute;
+  left: 3%;
+  bottom: 0%;
+  height: 60vh;
+  max-height: 80vh;
+  max-width: 40vw;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 2;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.35));
+  opacity: 0.7;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%);
+  mask-image: linear-gradient(to top, transparent 0%, black 30%);
+}
+
+/* Extra Large Screens */
+@media (max-width: 1400px) {
+  .moneyStarArt {
+    height: 55vh;
+    max-width: 38vw;
+    opacity: 0.65;
+  }
+}
+
+/* Large Tablet/Small Desktop */
+@media (max-width: 1200px) {
+  .moneyStarArt {
+    height: 48vh;
+    max-width: 32vw;
+    left: -3%;
+    opacity: 0.6;
+  }
+}
+
+/* Medium Tablet */
+@media (max-width: 1024px) {
+  .moneyStarArt {
+    height: 42vh;
+    max-width: 28vw;
+    left: -2.5%;
+    opacity: 0.5;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .moneyStarArt {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .prizeSection {
+    padding: 80px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    position: relative;
+  }
+
+  .tiltPlate {
+    margin: 0 auto 0;
+    flex-shrink: 0;
+  }
+
+  .amountWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amount {
+    font-size: clamp(5rem, 16vw, 7rem) !important;
+    letter-spacing: 2px;
+  }
+
+  .tagline {
+    letter-spacing: 3px;
+    font-size: var(--syrus-text-sm);
+    margin-top: 20px;
+  }
+
+  .perksLine {
+    font-size: var(--syrus-text-md);
+    letter-spacing: 2px;
+  }
+
+  .glowOrb {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding-top: 40px;
+  }
+
+  .amount {
+    font-size: clamp(5rem, 14vw, 6rem) !important;
+    letter-spacing: 1px;
+  }
+}

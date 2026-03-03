@@ -1,0 +1,19 @@
+/* Wrapper preserves normal document flow */
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Black overlay that sits on top of the section content.
+   Opacity is driven directly by JS (rAF loop) for smooth
+   scroll-synced reveal. No CSS transition — the rAF loop
+   updates every frame. pointer-events: none so the
+   underlying section stays fully interactive. */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 20;
+}

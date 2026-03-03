@@ -3,78 +3,78 @@
     "name": "Chinmay Desai",
     "designation": "Student Head",
     "social": "https://www.linkedin.com/in/chinmay-desai-b72005233/",
-    "photo": "/teamImages/BE/ChinmayDesai.jpg"
+    "photo": "/teamImages/BE/Chinmay_Desai.webp"
   },
   {
     "name": "Eshan Vijay",
-    "designation": "Student Co Head",
+    "designation": "Dy. Student Head",
     "social": "https://www.linkedin.com/in/eshanvijay/",
-    "photo": "/teamImages/BE/EshanVijay.jpg"
+    "photo": "/teamImages/BE/Eshan_Vijay.webp"
   },
   {
     "name": "Hannan Chougle",
     "designation": "Sr. Tech Manager",
     "social": "https://www.linkedin.com/in/abdul-hannan-chougle-78840a252/",
-    "photo": "/teamImages/BE/HannanChougle.jpg"
+    "photo": "/teamImages/BE/Hannan_Chougle.webp"
   },
   {
     "name": "Gautam Rai",
     "designation": "Sr. Tech Manager",
     "social": "https://www.linkedin.com/in/gautam-rai-01184324a/",
-    "photo": "/teamImages/BE/GautamRai.jpg"
+    "photo": "/teamImages/BE/Gautam_Rai.webp"
   },
   {
     "name": "Vedika Walhe",
     "designation": "Sr. Tech Manager",
     "social": "https://www.linkedin.com/in/vedika-walhe-1ab1b2287/",
-    "photo": "/teamImages/BE/VedikaWalhe.jpg"
+    "photo": "/teamImages/BE/Vedika_Walhe.webp"
   },
   {
     "name": "Joel Dias",
     "designation": "Sr. Tech Manager",
     "social": "https://www.linkedin.com/in/joel-dias-882576282/",
-    "photo": "/teamImages/BE/JoelDias.jpg"
+    "photo": "/teamImages/BE/Joel_Dias.webp"
   },
   {
     "name": "Anisha Shankar",
     "designation": "Sr. PR Manager",
     "social": "https://www.linkedin.com/in/anisha-shankar-/",
-    "photo": "/teamImages/BE/AnishaShankar.jpg"
+    "photo": "/teamImages/BE/Anisha_Shankar.webp"
   },
   {
     "name": "Ishwari Dehadray",
     "designation": "Sr. PR Manager",
     "social": "https://www.linkedin.com/in/ishwari-dehadray-684498264/",
-    "photo": "/teamImages/BE/IshwariDehadray.jpg"
+    "photo": "/teamImages/BE/Ishwari_Dehadray.webp"
   },
   {
     "name": "Harshita Lohana",
     "designation": "Sr. PR Manager",
     "social": "https://www.linkedin.com/in/harshita-lohana-142784321/",
-    "photo": "/teamImages/BE/HarshitaLohana.jpg"
-  },
-  {
-    "name": "Saniya Dangat",
-    "designation": "Sr. Graphics Designer",
-    "social": "https://www.linkedin.com/in/saniya-dangat-55b26a287/",
-    "photo": "/teamImages/BE/SaniyaDangat.jpg"
-  },
-  {
-    "name": "Atharva Deore",
-    "designation": "Sr. Graphics Designer",
-    "social": "https://www.linkedin.com/in/atharva-deore-68283a256/",
-    "photo": "/teamImages/BE/AtharvaDeore.jpg"
+    "photo": "/teamImages/BE/Harshita_Lohana.webp"
   },
   {
     "name": "Shaanveer Singh",
     "designation": "Sr. Ambassador",
     "social": "https://www.linkedin.com/in/shaanveer-singh/",
-    "photo": "/teamImages/BE/ShaanveerSingh.jpg"
+    "photo": "/teamImages/BE/Shaanveer_Singh.webp"
   },
   {
     "name": "Simran Karamchandani",
     "designation": "Sr. Ambassador",
     "social": "https://www.linkedin.com/in/simran-karamchandani-32030a2a3/",
-    "photo": "/teamImages/BE/SimranKaramchandani.jpg"
+    "photo": "/teamImages/BE/Simran_Karamchandani.webp"
+  },
+  {
+    "name": "Saniya Dangat",
+    "designation": "Sr. Graphics Designer",
+    "social": "https://www.linkedin.com/in/saniya-dangat-55b26a287/",
+    "photo": "/teamImages/BE/Saniya_Dangat.webp"
+  },
+  {
+    "name": "Atharva Deore",
+    "designation": "Sr. Graphics Designer",
+    "social": "https://www.linkedin.com/in/atharva-deore-68283a256/",
+    "photo": "/teamImages/BE/Atharva_Deore.webp"
   }
 ]

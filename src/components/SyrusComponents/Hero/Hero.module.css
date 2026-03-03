@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+/* ============ Section & Pin ============ */
+.section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #05050a;
+}
+
+/* ============ Base Hero Layer ============ */
+.baseWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  will-change: opacity;
+}
+
+/* Background: full-screen cover */
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+/* White SVG logo between bg and characters – top-center, slightly below top */
+/* White SVG logo between bg and characters – static, no animations */
+.heroLogo {
+  position: absolute;
+  top: -10vw;
+  left: 15%;
+  width: 50vw;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Character: bottom-center */
+.heroChar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 85%;
+  width: auto;
+  max-width: 95%;
+  object-fit: contain;
+  object-position: bottom center;
+  z-index: 2;
+  will-change: transform;
+  transform-origin: bottom center;
+}
+
+/* Subtle vignette overlay */
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    1200px 700px at 50% 45%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.35) 70%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 3;
+}
+
+/* ============ Mask Layer ============ */
+/* Parent that holds the animated CSS custom properties
+   (--maskW, --maskX, --maskY) inherited by both children.
+   Starts at opacity 0 (transparent / invisible). */
+.maskLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  opacity: 0;
+  will-change: opacity;
+  pointer-events: none;
+
+  /* Animated via GSAP – children inherit */
+  --maskW: 200;
+  --maskCenterY: 450;
+}
+
+/* Black background with a logo-shaped transparent HOLE (inverted mask).
+   Uses mask-composite: exclude to punch out the logo from a solid fill. */
+.maskedCutout {
+  position: absolute;
+  inset: 0;
+  background: #000;
+
+  /* Two mask layers: logo SVG + solid fill; composite excludes the logo */
+  -webkit-mask-image:
+    url("/GTA/Syrus26-text-logo.svg"), linear-gradient(#fff 0 0);
+  mask-image: url("/GTA/Syrus26-text-logo.svg"), linear-gradient(#fff 0 0);
+
+  -webkit-mask-size:
+    calc(var(--maskW) * 1vw) auto,
+    100% 100%;
+  mask-size:
+    calc(var(--maskW) * 1vw) auto,
+    100% 100%;
+
+  -webkit-mask-position:
+    calc(50vw - var(--maskW) * 0.5vw)
+      calc(var(--maskCenterY) * 1px - var(--maskW) * 0.32759vw),
+    0 0;
+  mask-position:
+    calc(50vw - var(--maskW) * 0.5vw)
+      calc(var(--maskCenterY) * 1px - var(--maskW) * 0.32759vw),
+    0 0;
+
+  -webkit-mask-repeat: no-repeat, no-repeat;
+  mask-repeat: no-repeat, no-repeat;
+
+  /* Punch out the logo shape → transparent hole */
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  will-change:
+    mask-size,
+    -webkit-mask-size;
+}
+
+/* White fill that exactly matches the logo shape (normal mask).
+   Its opacity goes 0 → 1 during zoom-out, turning the transparent
+   hole progressively white. */
+.logoFill {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+  will-change: opacity;
+
+  -webkit-mask-image: url("/GTA/Syrus26-text-logo.svg");
+  mask-image: url("/GTA/Syrus26-text-logo.svg");
+
+  -webkit-mask-size: calc(var(--maskW) * 1vw) auto;
+  mask-size: calc(var(--maskW) * 1vw) auto;
+
+  -webkit-mask-position: calc(50vw - var(--maskW) * 0.5vw)
+    calc(var(--maskCenterY) * 1px - var(--maskW) * 0.32759vw);
+  mask-position: calc(50vw - var(--maskW) * 0.5vw)
+    calc(var(--maskCenterY) * 1px - var(--maskW) * 0.32759vw);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* ============ Title Card ============ */
+.titleCard {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(
+      900px 500px at 50% 20%,
+      rgba(255, 255, 255, 0.06),
+      transparent 55%
+    ),
+    #05050a;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.titleLogo {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15vw;
+  height: auto;
+  filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.7));
+  user-select: none;
+}
+
+.titleTextWrap {
+  text-align: center;
+  user-select: none;
+  padding: 0 18px;
+  margin-top: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.orgLogo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  user-select: none;
+}
+
+.bigTitleDiv {
+  margin: 20px 0;
+}
+
+.bigTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 6vw;
+  line-height: 6vw;
+  background: linear-gradient(to bottom, #927fff, #fe519f, #fc815b, #ffc641);
+  background-size: 100% 300%;
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 20px rgba(255, 45, 138, 0.3),
+    0 0 40px rgba(255, 112, 67, 0.15);
+}
+
+.subTitle {
+  font-family: var(--syrus-primary-font);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============ Hero Button ============ */
+.heroBtn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 0;
+  overflow: hidden;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+
+.heroBtnText {
+  position: relative;
+  z-index: 2;
+}
+
+.unstopLogo {
+  position: relative;
+  z-index: 2;
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+  margin: -2px 0;
+}
+
+/* Rotating conic-gradient border — smooth circular spin */
+.heroBtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Large circle ensures uniform coverage while spinning */
+  width: 300%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(#927fff, #fe519f, #fc815b, #ffc641, #927fff);
+  animation: borderSpin 4s linear infinite;
+  z-index: -1;
+}
+
+/* Inner fill to mask out the center, leaving only 2px border visible */
+.heroBtn::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 6px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    #05050a;
+  z-index: 1;
+}
+
+.heroBtn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow:
+    0 0 20px rgba(146, 127, 255, 0.3),
+    0 0 40px rgba(254, 81, 159, 0.2),
+    0 0 60px rgba(255, 198, 65, 0.1);
+}
+
+.heroBtn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+@keyframes borderSpin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* ============ Button Row ============ */
+.btnRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+/* ============ Discord Button ============ */
+.discordBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: #7f8aff;
+  background: #000000;
+  border: 2px solid #5865f2;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    background 0.2s,
+    color 0.2s;
+}
+
+.discordBtn:hover {
+  color: #ffffff;
+  background: #5865f2;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow:
+    0 0 20px rgba(88, 101, 242, 0.4),
+    0 0 40px rgba(88, 101, 242, 0.2);
+}
+
+.discordBtn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.discordIcon {
+  width: 32px;
+  height: 32px;
+  margin: -6px 0;
+  object-fit: contain;
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 60px;
+  user-select: none;
+  z-index: 20;
+  animation: bounceDown 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+    opacity: 1;
+  }
+}
+
+/* ============ Mobile Adjustments ============ */
+@media (max-width: 640px) {
+  .section {
+    min-height: 100dvh;
+  }
+  .heroLogo {
+    top: 16%;
+    left: 50%;
+    width: 85vw;
+    transform: translateX(-57%);
+  }
+
+  .titleLogo {
+    top: 10%;
+    width: 40vw;
+  }
+
+  .heroChar {
+    height: 70%;
+  }
+
+  .titleTextWrap {
+    margin-top: 0;
+  }
+
+  .bigTitle {
+    font-size: 12vw;
+    line-height: 15vw;
+  }
+
+  .logoRow {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 8px 16px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .scrollHint {
+    font-size: 45px;
+  }
+
+  .orgLogo {
+    height: 35px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+    letter-spacing: 0.18em;
+  }
+
+  .btnRow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-top: 30px;
+  }
+
+  .heroBtn {
+    margin-top: 0;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .discordBtn {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+}

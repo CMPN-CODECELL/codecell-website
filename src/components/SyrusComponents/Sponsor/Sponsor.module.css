@@ -1,0 +1,379 @@
+@media (min-width: 769px) {
+  .sponsorGuy {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsorGuy {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsorGrid {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .sponsorCard {
+    min-width: 0 !important;
+    width: 90% !important;
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    justify-self: center !important;
+    align-self: stretch !important;
+    padding: 0.8rem 0.5rem !important;
+    font-size: 3rem !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .sponsorCircle {
+    width: 90px !important;
+    height: 90px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .associateCircle {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+/*.section h2,
+.section h3,
+.section h4 {
+  font-family: var(--syrus-primary-font);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}*/
+
+/* Sponsor styles - Money Theme with GTA Images */
+.section {
+  padding: 80px 0;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("/GTA/sponser.webp");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  color: var(--primary-syrus-text);
+  font-family: var(--syrus-primary-font);
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    inset 0 250px 180px -60px rgba(0, 0, 0, 1),
+    inset 0 -250px 180px -60px rgba(0, 0, 0, 1);
+}
+
+/* Smooth overlay */
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 30%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.tiltPlate {
+  width: clamp(200px, 50vw, 280px);
+  margin: 10px auto 40px;
+  z-index: 2;
+  animation: slideInFromTop 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sponsorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  animation: fadeInStaggered 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes fadeInStaggered {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.sponsorCard {
+  padding: 30px;
+  border: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 200px;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: none;
+}
+
+.sponsorCard:hover {
+  border: none;
+  box-shadow: none;
+  transform: scale(1.03);
+}
+
+.sponsorType {
+  margin-bottom: 20px;
+  font-family: var(--syrus-secondary-font);
+  font-size: 2rem;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sponsorType,
+.sponsorType span {
+  font-family: var(--syrus-primary2-font);
+  font-weight: 400;
+}
+
+.sponsorCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff 0%, #dcdcdc 100%);
+  margin: 0 auto;
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.35),
+    0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.sponsorCard:hover .sponsorCircle {
+  box-shadow:
+    0 0 30px rgba(255, 255, 255, 0.55),
+    0 4px 20px rgba(0, 0, 0, 0.35);
+  transform: scale(1.1);
+}
+
+.categorySection {
+  margin-top: 80px;
+}
+
+.categoryTitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: var(--syrus-secondary-font);
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.section h3.categoryTitle,
+.section h4.categoryTitle {
+  font-family: var(--syrus-secondary-font) !important;
+  font-weight: 400;
+}
+
+.associateGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.associateItem {
+  padding: 20px;
+  font-size: 3rem;
+  animation: associateCardEnter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0;
+}
+
+.associateItem:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.associateItem:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.associateItem:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.associateItem:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes associateCardEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.associateCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff 0%, #dcdcdc 100%);
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.3),
+    0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.sponsorCircle,
+.associateCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sponsorLogo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.associateItem:hover .associateCircle {
+  box-shadow:
+    0 0 30px rgba(255, 255, 255, 0.5),
+    0 4px 20px rgba(0, 0, 0, 0.35);
+  transform: scale(1.1);
+}
+
+.sponsorGuy {
+  position: absolute;
+  bottom: 0;
+  right: -18%;
+  height: 70vh;
+  max-height: 100vh;
+  object-fit: contain;
+  object-position: bottom right;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.35));
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%);
+  mask-image: linear-gradient(to top, transparent 0%, black 30%);
+}
+
+@media (max-width: 768px) {
+  .section {
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url("/GTA/sponsor-mobile.webp");
+    background-size: cover, 150% auto;
+    background-position: center, center center;
+  }
+
+  .sponsorGuy {
+    right: -12%;
+    height: 50vh;
+    opacity: 0.9;
+  }
+
+  /* Center last sponsor card if odd number of cards */
+  .sponsorGrid .sponsorCard:nth-last-child(1):nth-child(odd) {
+    grid-column: 1 / span 2 !important;
+    justify-self: center !important;
+  }
+
+  .sponsorType {
+    font-size: 1.2rem !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    padding: 0 4px !important;
+    text-align: center !important;
+  }
+  .categoryTitle {
+    font-size: 1.8rem;
+  }
+  .associateItem {
+    font-size: 1.5rem;
+  }
+  .sponsorCard:hover {
+    transform: none;
+  }
+  .sponsorCard:hover .sponsorCircle {
+    box-shadow: none;
+    transform: none;
+  }
+  .associateItem:hover .associateCircle {
+    box-shadow: none;
+    transform: none;
+  }
+}

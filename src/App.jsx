@@ -6,7 +6,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loading from "./components/misc/Loading/Loading";
-import ScrollToTopButton from "./components/misc/ScrollToTop/ScrollToTop";
 import Syrus from "./pages/Syrus/Syrus";
 import CodeOfConduct from "./pages/CodeOfConduct/CodeOfConduct";
 
@@ -15,7 +14,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
   }, []);
 
   return (
@@ -23,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={loading ? <Loading /> : <Landing />} />
         <Route path="/team" element={loading ? <Loading /> : <Team />} />
+        {/* <Route path="/syrus" element={loading ? <Loading /> : <Syrus />} /> */}
         <Route path="/syrus" element={loading ? <Loading /> : <Syrus />} />
         <Route
           path="/code-of-conduct"

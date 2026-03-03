@@ -1,14 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import CodecellLogo from "../../assets/codecell.svg";
-import VESITLogo from "../../assets/VESIT.png";
+import CodecellLogo from "/codecell-logo.webp";
+import VESITLogo from "/VESIT.png";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-codecell">
         <img src={CodecellLogo} />
-        CodeCell
+        CodeCell++
       </div>
       <div className="footer-vesit">
         <div className="vesit-name">
@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-info">
-        © 2024-2025 CodeCell VESIT. All Rights Reserved. |{" "}
+        © 2025-2026 CodeCell++ VESIT. All Rights Reserved. |{" "}
         <a href="/code-of-conduct">Code of Conduct</a>
       </div>
       <div className="footer-socials">

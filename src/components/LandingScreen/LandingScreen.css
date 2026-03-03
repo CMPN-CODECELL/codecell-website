@@ -15,7 +15,7 @@
 .info-section {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 3rem;
   user-select: none;
   -moz-user-select: none;
@@ -90,41 +90,71 @@
 
 .syrus-button-landing {
   width: fit-content !important;
-  /* height: 3rem !important; */
   font-family: "Press Start 2P", sans-serif;
-  font-size: 1.3rem;
-  background: #313f97;
+  font-size: 1.5rem;
+  line-height: auto;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
   color: white;
-  backdrop-filter: blur(5px);
-  border: 2px solid var(--primary);
   text-align: center;
-  padding: 0.5rem;
-  padding-inline: 1.5rem;
-  transition: transform 0.2s ease-in-out;
+  padding: 1rem 1.8rem;
   border: 2px solid transparent;
-  text-shadow: 2px 2px 0px red;
-  /* color: white !important;
-  text-decoration: none !important; */
+  border-radius: 6px;
+  text-shadow: 0 0 6px rgba(255, 179, 0, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-clip: padding-box;
+}
+
+.syrus-button-landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #7b68ee, #ff2d8a, #ff7043, #ffb300);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .syrus-button-landing:hover {
-  transform: scale(1.05);
-  border: 2px solid red;
-  background-color: #313f97;
-  color: white;
-  transform: translate(0.05em, 0.05em);
-  filter: drop-shadow(3px 3px 0px red);
-  text-shadow: 3px 3px 0px red;
+  transform: translateY(-3px) scale(1.08);
+  background: linear-gradient(
+    135deg,
+    rgba(123, 104, 238, 0.3),
+    rgba(255, 45, 138, 0.25),
+    rgba(255, 112, 67, 0.2)
+  );
+  border: 2px solid transparent;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("/syrus-button-bg.png");
+  background-size: cover;
+  background-position: center;
+  text-shadow: none;
+  filter: drop-shadow(0 0 6px rgba(255, 112, 67, 0.2));
+}
+
+.syrus-button-landing:hover::before {
+  background: linear-gradient(135deg, #ffb300, #ff7043, #ff2d8a, #7b68ee);
 }
 
 .syrus-button-landing:active {
-  transform: scale(1);
-  border: 2px solid #313f97 !important;
-  background-color: red !important;
   color: white !important;
-  transform: translate(0.05em, 0.05em) !important;
-  filter: drop-shadow(3px 3px 0px #313f97) !important;
-  text-shadow: 3px 3px 0px #313f97 !important;
+  border: 2px solid transparent !important;
+  text-shadow: 0 0 6px rgba(255, 179, 0, 0.4) !important;
 }
 
 .codecell-info {
@@ -205,7 +235,7 @@
   }
   .syrus-button-landing {
     width: 50% !important;
-    font-size: 1.1rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -220,6 +250,10 @@
     width: 58vw;
     height: 35vh !important;
   }
+  .syrus-button-landing {
+    width: 100% !important;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -227,9 +261,6 @@
     flex-direction: column;
   }
   .upcoming-button {
-    width: 100% !important;
-  }
-  .syrus-button-landing {
     width: 100% !important;
   }
   .codecell-model {

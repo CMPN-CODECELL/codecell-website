@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
-import CodecellLogo from "../../assets/codecell.svg";
+import CodecellLogo from "/codecell-logo.webp";
 
 function CodecellNav({ isUpcomingWorkshops = false }) {
   return (
@@ -15,7 +15,7 @@ function CodecellNav({ isUpcomingWorkshops = false }) {
     >
       <Navbar.Brand href="/" className="navbar-title">
         <img src={CodecellLogo} className="codecell-logo" />
-        CodeCell
+        CodeCell++
         {/* <span className="VESIT">VESIT</span>
         <img src={VESITLogo} className="vesit-logo" /> */}
       </Navbar.Brand>
@@ -32,9 +32,9 @@ function CodecellNav({ isUpcomingWorkshops = false }) {
       </Navbar.Toggle>
       <Navbar.Collapse className="nav-items-wrapper" id="responsive-navbar-nav">
         <div className="nav-items">
-          {/* <div className="nav-item syrus-nav">
-            <a href="/syrus">Syrus'25</a>
-          </div> */}
+          <div className="nav-item syrus-nav">
+            <a href="/syrus">SYRUS'26</a>
+          </div>
           {isUpcomingWorkshops && (
             <div className="nav-item">
               <a href="/#upcoming-events">Upcoming</a>
