@@ -138,7 +138,7 @@ const Navbar = () => {
           SYRUS
         </div>
         <div className={styles.navActions}>
-          <a
+          {/* <a
             href="https://unstop.com/o/7ZVeoX4?utm_medium=Share&utm_source=tinkecmp45348&utm_campaign=Online_coding_challenge"
             target="_blank"
             rel="noopener noreferrer"
@@ -150,7 +150,7 @@ const Navbar = () => {
               src="/GTA/unstop-logo.webp"
               alt="UnStop"
             />
-          </a>
+          </a> */}
           <a
             href="https://discord.gg/kDAfGgjhPG"
             target="_blank"
