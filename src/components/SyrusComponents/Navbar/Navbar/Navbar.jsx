@@ -5,7 +5,7 @@ import MenuOverlay from "../MenuOverlay/MenuOverlay";
 import { useMenuAnimation } from "../hooks/useMenuAnimation";
 import { MENU_ITEMS } from "../config/menuConfig";
 
-const Navbar = () => {
+const Navbar = ({ onCallMentor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
@@ -151,6 +151,12 @@ const Navbar = () => {
               alt="UnStop"
             />
           </a> */}
+          <button
+            className={`${styles.navBtn} ${showLogo ? styles.navBtnVisible : styles.navBtnHidden}`}
+            onClick={onCallMentor}
+          >
+            Mentor
+          </button>
           <a
             href="https://discord.gg/kDAfGgjhPG"
             target="_blank"

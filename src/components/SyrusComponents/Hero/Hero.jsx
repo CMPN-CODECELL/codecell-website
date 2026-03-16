@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState, useMemo } from "react";
 
 const HERO_BGS_DESKTOP = ["/GTA/gta-sunset.webp", "/GTA/hero-section-bg.webp"];
-const HERO_BGS_MOBILE = ["/GTA/gta-sunset-mobile.webp", "/GTA/hero-section-bg-mobile.webp"];
+const HERO_BGS_MOBILE = [
+  "/GTA/gta-sunset-mobile.webp",
+  "/GTA/hero-section-bg-mobile.webp",
+];
 const MOBILE_BREAKPOINT = 640;
 import styles from "./Hero.module.css";
 
@@ -297,7 +300,10 @@ export default function Hero({ onCallMentor }) {
       if (hasVisited) {
         const st = tl.scrollTrigger;
         requestAnimationFrame(() => {
-          lenis.scrollTo(st.end, { duration: 2.5, easing: (t) => 1 - Math.pow(1 - t, 3) });
+          lenis.scrollTo(st.end, {
+            duration: 2.5,
+            easing: (t) => 1 - Math.pow(1 - t, 3),
+          });
         });
       } else {
         localStorage.setItem("syrus26_visited", "1");
@@ -382,14 +388,17 @@ export default function Hero({ onCallMentor }) {
               <span className={styles.heroBtnText}>Register on</span>
               <img className={styles.unstopLogo} src={unstopLogo} alt="UnStop" />
             </a> */}
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/182P7GQpMdOM29beUtPCn2NfvMRHeHDP3/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.heroBtn}
             >
               <span className={styles.heroBtnText}>View PS Allotment</span>
-            </a>
+            </a> */}
+            <button onClick={onCallMentor} className={styles.heroBtn}>
+              <span className={styles.heroBtnText}>Call a Mentor</span>
+            </button>
             <a
               href="https://discord.gg/kDAfGgjhPG"
               target="_blank"

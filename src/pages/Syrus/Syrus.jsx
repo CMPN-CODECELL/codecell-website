@@ -27,7 +27,7 @@ function Syrus() {
 
   return (
     <div className="syrus-page">
-      <Navbar />
+      <Navbar onCallMentor={() => setMentorOpen(true)} />
       <Hero onCallMentor={() => setMentorOpen(true)} />
       <ScrollReveal>
         <Sponsor />
