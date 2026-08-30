@@ -196,10 +196,6 @@
   color: white;
 }
 
-.coc-list li a {
-  color: var(--primary);
-}
-
 .coc-list-nested {
   margin-left: 1rem;
   padding: 0.5rem 0;

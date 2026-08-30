@@ -15,7 +15,7 @@ function CodecellNav({ isUpcomingWorkshops = false }) {
     >
       <Navbar.Brand href="/" className="navbar-title">
         <img src={CodecellLogo} className="codecell-logo" />
-        CodeCell++
+        CodeCell
         {/* <span className="VESIT">VESIT</span>
         <img src={VESITLogo} className="vesit-logo" /> */}
       </Navbar.Brand>
@@ -33,7 +33,7 @@ function CodecellNav({ isUpcomingWorkshops = false }) {
       <Navbar.Collapse className="nav-items-wrapper" id="responsive-navbar-nav">
         <div className="nav-items">
           <div className="nav-item syrus-nav">
-            <a href="/syrus">SYRUS'26</a>
+            <a href="/syrus">Syrus'26</a>
           </div>
           {isUpcomingWorkshops && (
             <div className="nav-item">

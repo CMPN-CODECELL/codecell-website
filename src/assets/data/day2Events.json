@@ -1,17 +1,13 @@
 [
   {
-    "title": "Day 02 Begins",
-    "description": "Finalists arrive and coding resumes.",
-    "date": "8:30 AM"
+    "title": "Final Round",
+    "description":
+      "Coding resumes at 8:30 AM, followed by final presentations.",
+    "date": "27 Feb Day 2: 8:30 AM"
   },
   {
-    "title": "Judging Round",
-    "description": "Final presentations and demos to the judges.",
-    "date": "2:30 PM"
-  },
-  {
-    "title": "Closing Ceremony and Prize Distribution",
+    "title": "Closing Ceremony",
     "description": "",
-    "date": "TBA"
+    "date": "Day 2: 2:00 PM - 3:00 PM"
   }
 ]

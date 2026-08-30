@@ -37,7 +37,7 @@ const Team = () => {
       <ScrollToTopButton />
       <CodecellNav />
       <div className="meet-the-team">
-        Meet The&nbsp;<span>CodeCell++</span>&nbsp;Team
+        Meet The&nbsp;<span>CodeCell</span>&nbsp;Team
       </div>
       <Accordion flush defaultActiveKey="0">
         <Accordion.Item

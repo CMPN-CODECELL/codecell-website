@@ -1,32 +1,22 @@
 [
   {
-    "title": "Registrations Open",
-    "description": "Grab your team, register and reserve your problem statement.",
-    "date": "24th Feb 2026"
+    "title": "Problem Statement Release",
+    "description": "Problem statements release and Registration starts",
+    "date": "12th Feb 2026"
   },
   {
-    "title": "Registrations Deadline",
-    "description": "Last date to register and reserve your problem statement.",
-    "date": "1st Mar 2026"
+    "title": "PS and Repos Allocation",
+    "description": "Each team will be alloted a PS and Github Repo to the team leader",
+    "date": "16 Feb 2026"
   },
   {
-    "title": "Problem Statement Allotment",
-    "description": "Get your PS and setup your repos.",
-    "date": "2nd Mar 2026"
+    "title": "Initial Submission",
+    "description": "PPT / Abstract Submission",
+    "date": "24 Feb 2026"
   },
   {
-    "title": "Online Build Starts",
-    "description": "Start ideating, designing and building your solution.",
-    "date": "3rd Mar 2026"
-  },
-  {
-    "title": "Initial Prototype Submission",
-    "description": "Submit your PPTs, Videos and Repos for your solution.",
-    "date": "15th Mar 2026"
-  },
-  {
-    "title": "Shortlisting Round 01",
-    "description": "Get to know if you are shortlisted for the Syrus Main Days.",
-    "date": "16th Mar 2026"
+    "title": "Shortlisted Teams Announcement",
+    "description": "Shotlisted Teams will be announced offline",
+    "date": "25 Feb 2026"
   }
 ]

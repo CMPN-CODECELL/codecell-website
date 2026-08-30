@@ -10,15 +10,14 @@ const CodeOfConduct = () => {
       <CodecellNav />
       <div className="coc-container">
         <h1 className="coc-title">
-          <span>CodeCell++</span>
-          {"  "}
-          <span className="title-rest">Code of Conduct</span>
+          <span>CodeCell</span>{" "}
+          <span className="title-rest">– Code of Conduct</span>
         </h1>
 
         <section className="coc-section">
           <h2 className="coc-section-title">Applicability</h2>
           <p className="coc-text">
-            This Code of Conduct applies to all CodeCell++ activities, including
+            This Code of Conduct applies to all CodeCell activities, including
             but not limited to:
           </p>
           <ul className="coc-list">
@@ -45,7 +44,7 @@ const CodeOfConduct = () => {
             <span className="section-number">1.</span> Expected Behavior
           </h2>
           <p className="coc-text">
-            CodeCell++ is committed to creating a safe, inclusive, and respectful
+            CodeCell is committed to creating a safe, inclusive, and respectful
             learning environment. We expect all participants to:
           </p>
           <ul className="coc-list">
@@ -80,7 +79,7 @@ const CodeOfConduct = () => {
             <span className="section-number">2.</span> Unacceptable Behavior
           </h2>
           <p className="coc-text">
-            The following behaviors are not tolerated in any CodeCell++ space:
+            The following behaviors are not tolerated in any CodeCell space:
           </p>
           <div className="coc-subsection">
             <h3 className="coc-subsection-title">
@@ -154,7 +153,7 @@ const CodeOfConduct = () => {
                 </a>
               </li>
               <li>
-                Directly contact any CodeCell++ organizing member, Student Head,
+                Directly contact any CodeCell organizing member, Student Head,
                 or Co-Head
               </li>
               <li>
@@ -169,7 +168,7 @@ const CodeOfConduct = () => {
             <li>Reviewed promptly and fairly</li>
           </ul>
           <p className="coc-text coc-highlight">
-            CodeCell++ organizers are available to support anyone affected and
+            CodeCell organizers are available to support anyone affected and
             will take appropriate steps to ensure safety.
           </p>
         </section>
@@ -180,7 +179,7 @@ const CodeOfConduct = () => {
             Violations
           </h2>
           <p className="coc-text">
-            If a participant violates this Code of Conduct, CodeCell++ reserves
+            If a participant violates this Code of Conduct, CodeCell reserves
             the right to take appropriate action, including but not limited to:
           </p>
           <ul className="coc-list coc-list-consequences">
@@ -188,7 +187,7 @@ const CodeOfConduct = () => {
             <li>Removal from a session, workshop, or event</li>
             <li>Disqualification from hackathons or competitions</li>
             <li>
-              Temporary or permanent ban from CodeCell++ activities and platforms
+              Temporary or permanent ban from CodeCell activities and platforms
             </li>
             <li>
               Reporting to college authorities or local law enforcement if
@@ -204,7 +203,7 @@ const CodeOfConduct = () => {
         <section className="coc-section coc-commitment">
           <h2 className="coc-section-title">Our Commitment</h2>
           <p className="coc-text">
-            CodeCell++ is committed to designing inclusive spaces, especially for
+            CodeCell is committed to designing inclusive spaces, especially for
             those who are new, underrepresented, or traditionally excluded from
             tech communities. We continuously learn, improve, and adapt our
             practices to ensure our community remains welcoming, safe, and
@@ -212,7 +211,7 @@ const CodeOfConduct = () => {
           </p>
           <div className="coc-agreement">
             <p>
-              By participating in CodeCell++ activities, you agree to uphold this
+              By participating in CodeCell activities, you agree to uphold this
               Code of Conduct.
             </p>
           </div>

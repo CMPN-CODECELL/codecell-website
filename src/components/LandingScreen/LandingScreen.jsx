@@ -2,12 +2,12 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import CodecellModel from "../CodecellModel/CodecellModel";
 import GlassContainer from "../GlassContainer/GlassContainer";
-import VESITLogo from "/VESIT.png";
+import VESITLogo from "../../assets/VESIT.png";
 import "./LandingScreen.css";
 
-const LandingScreen = ({ events = [] }) => {
-  const hasEvents = Array.isArray(events) && events.length > 0;
-  const showEventsLabel =
+const LandingScreen = ({ workshops = [] }) => {
+  const hasWorkshops = Array.isArray(workshops) && workshops.length > 0;
+  const showWorkshopsLabel =
     typeof window !== "undefined" && window.innerWidth > 1350;
 
   return (
@@ -22,7 +22,7 @@ const LandingScreen = ({ events = [] }) => {
         <GlassContainer>
           <div className="codecell-info">
             <div className="codecell-title">
-              CodeCell++ <span>VESIT</span>
+              CodeCell <span>VESIT</span>
             </div>
             <div className="codecell-subtitle">
               Tinkerers from Computer Engineering
@@ -30,14 +30,14 @@ const LandingScreen = ({ events = [] }) => {
           </div>
         </GlassContainer>
         <div className="landing-buttons">
-          {/* {hasEvents && (
+          {hasWorkshops && (
             <Button className="upcoming-button" href="#upcoming-events">
               Upcoming <br />
-              {showEventsLabel && "Events"}
+              {showWorkshopsLabel && "Workshops"}
             </Button>
-          )} */}
+          )}
           <Button className="syrus-button-landing" href="/syrus">
-            SYRUS'26
+            Syrus'26
           </Button>
         </div>
       </div>

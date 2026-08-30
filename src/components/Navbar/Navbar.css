@@ -5,6 +5,7 @@
   font-size: 1.4rem !important;
   background: var(--dark-alpha) !important;
   color: white !important;
+  backdrop-filter: blur(5px);
   font-family: "Press Start 2P", sans-serif;
   border-bottom: 1px solid var(--primary);
   font-weight: 100;
@@ -74,8 +75,12 @@
 }
 
 .nav-item.syrus-nav a {
+  font-family: "Pricedown", serif;
+  font-size: 2.2rem;
+  line-height: 0;
   color: white;
   text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+  -webkit-text-stroke: 1.25px rgba(0, 0, 0);
   transition: all 0.3s ease;
 }
 
@@ -126,10 +131,10 @@
 
 @media screen and (max-width: 545px) {
   .codecell-nav {
-    padding-inline: 1%;
+    padding-inline: 2%;
   }
   .navbar-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .navbar-title img {
     width: 3.25rem !important;

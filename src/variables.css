@@ -5,30 +5,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
 
 @font-face {
-  font-family: "ChaletLondon";
-  src: url("/fonts/Chalet-London.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "ChaletNewYork";
-  src: url("/fonts/Chalet-NewYork.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "ChaletComprime";
-  src: url("/fonts/Chalet-Comprime.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "Pricedown";
-  src: url("/fonts/Pricedown.otf") format("opentype");
+  src: url("/fonts/Pricedown.otf") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chalet";
+  src: url("/fonts/Chalet.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "SignPainter";
   src: url("/fonts/SignPainter.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
-
 
 /* Color Pallete */
 * {
@@ -88,10 +86,8 @@
   --tertiary-syrus-accent: #555555;
 
   /* Syrus Fonts */
-  --syrus-primary-font: "ChaletLondon", serif;
-  --syrus-primary2-font: "ChaletComprime", serif;
-  --syrus-primary3-font: "ChaletNewYork", serif;
-  --syrus-secondary-font: "SignPainter", cursive;
+  --primary-syrus-font: "Chalet", serif;
+  --secondary-syrus-font: "SignPainter", cursive;
   --syrus-display-font: "Pricedown", serif;
 
   /* Syrus Font Sizes */

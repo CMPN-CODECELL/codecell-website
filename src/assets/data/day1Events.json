@@ -3,23 +3,18 @@
     "title": "Hackathon Begins",
     "description":
       "Onboarding starts at 8:30 AM; the hackathon officially kicks off at 9:30 AM.",
-    "date": "8:30 AM"
+    "date": "26 Feb Day 1: 8:30 AM"
   },
   {
-    "title": "Mentoring Round 01",
+    "title": "First Round Evaluations",
     "description":
-      "Technical mentors review your progress and provide valuable feedback.",
-    "date": "2:30 PM"
+      "Teams submit presentations by 12 PM for the first evaluation round.",
+    "date": "Day 1: 12:00 PM"
   },
   {
-    "title": "Submissions",
+    "title": "Second Round Evaluations",
     "description":
-      "Submit your code for the day.",
-    "date": "6:00 PM"
-  },
-  {
-    "title": "Shortlisting Round 02",
-    "description": "Get to know if you are shortlisted for the Syrus Main Day 02.",
-    "date": "11:59 PM"
+      "By 6 PM, further shortlisted teams submit final code.",
+    "date": "Day 1: 6:00 PM"
   }
 ]

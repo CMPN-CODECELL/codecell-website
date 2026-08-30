@@ -90,14 +90,15 @@
 
 .syrus-button-landing {
   width: fit-content !important;
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 1.5rem;
-  line-height: auto;
+  font-family: "Pricedown", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(6px);
   color: white;
+  -webkit-text-stroke: 1.25px rgba(0, 0, 0);
   text-align: center;
-  padding: 1rem 1.8rem;
+  padding: 0.5rem 1.8rem 1rem;
   border: 2px solid transparent;
   border-radius: 6px;
   text-shadow: 0 0 6px rgba(255, 179, 0, 0.4);
@@ -140,7 +141,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: url("/syrus-button-bg.png");
+  background-image: url("../../assets/syrus-button-bg.png");
   background-size: cover;
   background-position: center;
   text-shadow: none;
@@ -251,8 +252,7 @@
     height: 35vh !important;
   }
   .syrus-button-landing {
-    width: 100% !important;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -262,6 +262,10 @@
   }
   .upcoming-button {
     width: 100% !important;
+  }
+  .syrus-button-landing {
+    width: 100% !important;
+    font-size: 2.1rem;
   }
   .codecell-model {
     width: 62vw;
