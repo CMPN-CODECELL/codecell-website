@@ -10,7 +10,7 @@ function Faq() {
       question:
         "I do not have a lot of experience in coding. Can I still join this hackathon?",
       answer:
-        "Yes, Syrus '26 is beginner-friendly. Even if you do not have a lot of experience, you can participate and learn new things.",
+        "Yes, Syrus 7.0 is beginner-friendly. Even if you do not have a lot of experience, you can participate and learn new things.",
     },
     {
       question: "Where can I register for the hackathon?",
