@@ -33,7 +33,7 @@ function CodecellNav({ isUpcomingWorkshops = false }) {
       <Navbar.Collapse className="nav-items-wrapper" id="responsive-navbar-nav">
         <div className="nav-items">
           <div className="nav-item syrus-nav">
-            <a href="/syrus">SYRUS'26</a>
+            <a href="/syrus">SYRUS 7.0</a>
           </div>
           {isUpcomingWorkshops && (
             <div className="nav-item">
