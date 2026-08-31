@@ -37,7 +37,7 @@ const LandingScreen = ({ events = [] }) => {
             </Button>
           )} */}
           <Button className="syrus-button-landing" href="/syrus">
-            SYRUS'26
+            SYRUS 7.0
           </Button>
         </div>
       </div>
