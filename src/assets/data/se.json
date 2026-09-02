@@ -1,70 +1,94 @@
 [
   {
-    "name": "Kushagra Kumar",
+    "name": "Taansha Gupta",
     "designation": "SE Tech Manager",
-    "social": "https://www.linkedin.com/in/kushagra-kumar-0046962a0/",
+    "social": "https://www.linkedin.com/in/taansha-gupta-27b47a382/",
     "photo": "/teamImages/SE/Kushagra_Kumar.webp"
   },
   {
-    "name": "Poorvaja Joshi",
+    "name": "Prashant Singh",
     "designation": "SE Tech Manager",
-    "social": "https://www.linkedin.com/in/poorvaja-joshi/",
+    "social": "https://www.linkedin.com/in/prashant-singh-11ps07/",
     "photo": "/teamImages/SE/Poorvaja_Joshi.webp"
   },
   {
-    "name": "Jagdish Padhi",
+    "name": "Shreya Dora",
     "designation": "SE Tech Manager",
-    "social": "https://www.linkedin.com/in/jagdish-padhi",
+    "social": "https://www.linkedin.com/in/shreya-dora/",
+    "photo": "/teamImages/SE/Jagdish_Padhi.webp"
+  },
+  {
+    "name": "Ved Mhatre",
+    "designation": "SE Tech Manager",
+    "social": "https://www.linkedin.com/in/ved-mhatre-b519453aa/",
     "photo": "/teamImages/SE/Jagdish_Padhi.webp"
   },
   
   {
-    "name": "Apurva Gokhale",
+    "name": "Veer Jagwani",
     "designation": "SE PR Manager",
-    "social": "https://www.linkedin.com/in/apurva-gokhale-47528a32a",
+    "social": "https://www.linkedin.com/in/veer-jagwani-04a653362/",
     "photo": "/teamImages/SE/Apoorva_Gokhale.webp"
   },
   {
-    "name": "Nikunj Patil",
+    "name": "Devanshi Motwani",
     "designation": "SE PR Manager",
-    "social": "https://www.linkedin.com/in/nikunj-patil/",
+    "social": "https://www.linkedin.com/in/devanshi-motwani-763885384/",
     "photo": "/teamImages/SE/Nikunj_Patil.webp"
   },
   {
-    "name": "Bhoomi Singh",
+    "name": "Mansha",
     "designation": "SE PR Manager",
-    "social": "https://www.linkedin.com/in/bhoomi-singh-1a5358242/",
+    "social": "",
+    "photo": "/teamImages/SE/Bhoomi_Singh.webp"
+  },
+  {
+    "name": "Tanvi",
+    "designation": "SE PR Manager",
+    "social": "",
     "photo": "/teamImages/SE/Bhoomi_Singh.webp"
   },
   
   {
-    "name": "Rugved Vichare",
+    "name": "Diksha",
     "designation": "SE Ambassador",
-    "social": "https://www.linkedin.com/in/rugved-vichare-b22144220/",
+    "social": "",
     "photo": "/teamImages/SE/Rugved_Vichare.webp"
   },
   {
-    "name": "Ritam Chattopadhyay",
+    "name": "Diya Sapru",
     "designation": "SE Ambassador",
-    "social": "https://www.linkedin.com/in/ritam-chattopadhyay/",
+    "social": "https://www.linkedin.com/in/diya-sapru/",
+    "photo": "/teamImages/SE/Rugved_Vichare.webp"
+  },
+  {
+    "name": "Vedant Mehta",
+    "designation": "SE Ambassador",
+    "social": "https://www.linkedin.com/in/vedant-mehta-bb9370427/",
     "photo": "/teamImages/SE/Ritam_Chattopadhyay.webp"
   },
   {
-    "name": "Saman Pandey",
+    "name": "Gauri",
     "designation": "SE Graphics Designer",
-    "social": "https://www.linkedin.com/in/saman-pandey/",
+    "social": "",
     "photo": "/teamImages/SE/Saman_Pandey.webp"
   },
   {
-    "name": "Niharika Pawar",
+    "name": "Aarya",
     "designation": "SE Graphics Designer",
-    "social": "https://www.linkedin.com/in/niharika-pawar-a20792370/",
+    "social": "",
+    "photo": "/teamImages/SE/Niharika_Pawar.webp"
+  },
+   {
+    "name": "Kashish",
+    "designation": "SE Graphics Designer",
+    "social": "",
     "photo": "/teamImages/SE/Niharika_Pawar.webp"
   },
   {
-    "name": "Meet Phulwani",
+    "name": "Kanak Nandwani",
     "designation": "SE Graphics Designer",
-    "social": "https://www.linkedin.com/in/meet-phulwani-58b438343",
+    "social": "",
     "photo": "/teamImages/SE/Meet_Phulwani.webp"
   }
 

@@ -1,0 +1,6 @@
+ {
+    "name": "Jagdish Padhi",
+    "designation": "Jr. Tech Manager",
+    "social": "https://www.linkedin.com/in/jagdish-padhi",
+    "photo": "/teamImages/SE/Jagdish_Padhi.webp"
+  },
