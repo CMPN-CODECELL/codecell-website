@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import SyrusFooter from "../../../components/SyrusComponents/SyrusFooter/SyrusFooter";
 import CodecellLogo from "/codecell-logo.webp";
 import VESITLogo from "/VESIT.png";
 import "./comingsoon.modulo.css";
@@ -126,9 +125,6 @@ function Syrus() {
 
 
                 </section>
-
-                {/* CodeCell Syrus Footer */}
-                <SyrusFooter />
             </div>
         </div>
     );
