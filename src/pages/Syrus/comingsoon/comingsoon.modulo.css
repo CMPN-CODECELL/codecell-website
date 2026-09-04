@@ -1,0 +1,641 @@
+/* Hide scrollbar when on the Syrus page */
+html:has(.syrus-page),
+html:has(.syrus-page) body {
+    scrollbar-width: none !important;
+    /* Firefox */
+    -ms-overflow-style: none !important;
+    /* IE/Edge */
+}
+
+html:has(.syrus-page)::-webkit-scrollbar,
+html:has(.syrus-page) body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+/* Base Syrus Page Scope */
+.syrus-page {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--secondary, #050816);
+    color: var(--primary-syrus-text, #ffffff);
+    font-family: "Outfit", "Noto Sans", sans-serif;
+    overflow-x: hidden;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+.syrus-page::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+.syrus-page a {
+    text-decoration: none;
+}
+
+/* Background Matrix Canvas */
+.syrus-page .syrus-matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+/* Background CodeCell Gold Glow Overlays */
+.syrus-page .syrus-glow-top {
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(246, 195, 28, 0.25) 0%, rgba(5, 8, 22, 0) 70%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.syrus-page .syrus-glow-bottom {
+    position: fixed;
+    bottom: -200px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(246, 195, 28, 0.15) 0%, rgba(5, 8, 22, 0) 70%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Main Content Wrapper */
+.syrus-page .syrus-content-wrapper {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Header Navigation Bar */
+.syrus-page .syrus-coming-soon-nav {
+    width: 100%;
+    max-width: 1280px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.syrus-page .syrus-nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.syrus-page .syrus-nav-brand:hover {
+    transform: scale(1.03);
+}
+
+.syrus-page .syrus-nav-logo {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(246, 195, 28, 0.5));
+}
+
+.syrus-page .syrus-nav-title,
+.syrus-page .footer-codecell,
+.syrus-page .footer-codecell-text {
+    font-family: "Press Start 2P", sans-serif !important;
+    color: var(--primary, #f6c31c) !important;
+}
+
+.syrus-page .syrus-nav-title {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.syrus-page .footer-codecell {
+    font-size: clamp(1.3rem, 4vw, 2.2rem) !important;
+    letter-spacing: 1px;
+}
+
+.syrus-page .syrus-status-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(17, 17, 17, 0.8);
+    border: 1px solid rgba(246, 195, 28, 0.4);
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    box-shadow: 0 0 15px rgba(246, 195, 28, 0.15);
+}
+
+.syrus-page .syrus-status-dot {
+    width: 9px;
+    height: 9px;
+    background-color: var(--primary, #f6c31c);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--primary, #f6c31c);
+    animation: syrusPulse 1.8s infinite ease-in-out;
+}
+
+@keyframes syrusPulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 14px var(--primary, #f6c31c);
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+}
+
+.syrus-page .syrus-status-text {
+    font-family: "ChaletComprime", sans-serif, monospace;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.syrus-page .syrus-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.syrus-page .syrus-nav-link {
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    color: #d1d5db;
+    transition: color 0.2s ease;
+}
+
+.syrus-page .syrus-nav-link:hover {
+    color: var(--primary, #f6c31c);
+}
+
+.syrus-page .syrus-vesit-logo {
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+/* Hero Section */
+.syrus-page .syrus-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem 5rem 1.5rem;
+    max-width: 900px;
+    width: 100%;
+    flex: 1;
+}
+
+.syrus-page .syrus-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.syrus-page .syrus-main-heading {
+    font-family: "Outfit", "Noto Sans", sans-serif;
+    font-size: clamp(3.8rem, 10vw, 7rem);
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    margin: 0;
+}
+
+.syrus-page .syrus-highlight {
+    color: var(--primary, #f6c31c);
+    text-shadow: 0 0 35px rgba(246, 195, 28, 0.6);
+}
+
+.syrus-page .syrus-subheading {
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: #f3f4f6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+    text-shadow: 0 0 15px rgba(246, 195, 28, 0.3);
+}
+
+.syrus-page .syrus-coming-soon-banner {
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0.7rem 2.8rem;
+    background: linear-gradient(90deg, rgba(246, 195, 28, 0.1) 0%, rgba(246, 195, 28, 0.25) 50%, rgba(246, 195, 28, 0.1) 100%);
+    border-top: 2px solid var(--primary, #f6c31c);
+    border-bottom: 2px solid var(--primary, #f6c31c);
+    box-shadow: 0 0 25px rgba(246, 195, 28, 0.25);
+    border-radius: 4px;
+}
+
+.syrus-page .syrus-banner-glitch {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: clamp(1.3rem, 4vw, 2.2rem);
+    color: var(--primary, #f6c31c);
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.syrus-page .syrus-tagline {
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 600;
+    color: #f3f4f6;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.syrus-page .syrus-description {
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    line-height: 1.7;
+    color: #9ca3af;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.syrus-page .syrus-description strong {
+    color: #ffffff;
+}
+
+/* Countdown Section */
+.syrus-page .syrus-countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.5rem 1rem;
+    width: 100%;
+}
+
+.syrus-page .syrus-section-subtitle {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
+    color: var(--primary, #f6c31c);
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.syrus-page .syrus-countdown-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.syrus-page .syrus-countdown-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 120px;
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1.5px solid rgba(246, 195, 28, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(246, 195, 28, 0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.syrus-page .syrus-countdown-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary, #f6c31c);
+    box-shadow: 0 12px 35px rgba(246, 195, 28, 0.25);
+}
+
+.syrus-page .syrus-time-num {
+    font-family: "Outfit", "Press Start 2P", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.syrus-page .syrus-time-label {
+    font-family: "Outfit", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary, #f6c31c);
+    margin-top: 0.3rem;
+}
+
+.syrus-page .syrus-countdown-colon {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 2rem;
+    color: var(--primary, #f6c31c);
+    margin-bottom: 1.5rem;
+    animation: syrusPulse 1.5s infinite;
+}
+
+/* Teaser Section */
+.syrus-page .syrus-teasers-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.syrus-page .syrus-section-heading {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.syrus-page .syrus-section-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary, #f6c31c);
+    box-shadow: 0 0 10px var(--primary, #f6c31c);
+    border-radius: 2px;
+}
+
+.syrus-page .syrus-teasers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.syrus-page .syrus-teaser-card {
+    background: rgba(17, 17, 17, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2.2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.syrus-page .syrus-teaser-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary, #f6c31c), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.syrus-page .syrus-teaser-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(246, 195, 28, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(246, 195, 28, 0.15);
+}
+
+.syrus-page .syrus-teaser-card:hover::before {
+    opacity: 1;
+}
+
+.syrus-page .syrus-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    background: rgba(246, 195, 28, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid rgba(246, 195, 28, 0.2);
+}
+
+.syrus-page .syrus-card-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.syrus-page .syrus-card-desc {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.syrus-page .syrus-card-badge {
+    font-family: "Outfit", monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--primary, #f6c31c);
+    opacity: 0.85;
+}
+
+/* Subscription & Community CTA */
+.syrus-page .syrus-cta-section {
+    width: 100%;
+    max-width: 900px;
+    padding: 3rem 1.5rem 5rem 1.5rem;
+}
+
+.syrus-page .syrus-cta-box {
+    background: linear-gradient(135deg, rgba(20, 20, 25, 0.9) 0%, rgba(10, 12, 28, 0.95) 100%);
+    backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(246, 195, 28, 0.35);
+    border-radius: 24px;
+    padding: 3.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 30px rgba(246, 195, 28, 0.05);
+}
+
+.syrus-page .syrus-cta-title {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--primary, #f6c31c);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.syrus-page .syrus-cta-subtitle {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.05rem;
+    color: #d1d5db;
+    max-width: 550px;
+    margin-bottom: 2.2rem;
+    line-height: 1.6;
+}
+
+.syrus-page .syrus-subscribe-form {
+    display: flex;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 2.5rem;
+}
+
+.syrus-page .syrus-email-input {
+    flex: 1;
+    padding: 1rem 1.4rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.syrus-page .syrus-email-input:focus {
+    border-color: var(--primary, #f6c31c);
+    box-shadow: 0 0 12px rgba(246, 195, 28, 0.3);
+}
+
+.syrus-page .syrus-subscribe-btn {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 0.9rem;
+    background: var(--primary, #f6c31c);
+    color: #050816;
+    border: 2px solid var(--primary, #f6c31c);
+    border-radius: 10px;
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.syrus-page .syrus-subscribe-btn:hover {
+    background: #050816;
+    color: var(--primary, #f6c31c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(246, 195, 28, 0.4);
+}
+
+.syrus-page .syrus-community-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.syrus-page .syrus-community-btn {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.syrus-page .discord-btn {
+    background: #5865f2;
+    color: #ffffff;
+    border: 1.5px solid #5865f2;
+}
+
+.syrus-page .discord-btn:hover {
+    background: transparent;
+    color: #5865f2;
+    box-shadow: 0 0 15px rgba(88, 101, 242, 0.4);
+}
+
+.syrus-page .instagram-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #ffffff;
+    border: 1.5px solid transparent;
+}
+
+.syrus-page .instagram-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(220, 39, 67, 0.4);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .syrus-page .syrus-coming-soon-nav {
+        padding: 1.2rem 1rem;
+    }
+
+    .syrus-page .syrus-nav-links {
+        display: none;
+    }
+
+    .syrus-page .syrus-subscribe-form {
+        flex-direction: column;
+    }
+
+    .syrus-page .syrus-subscribe-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .syrus-page .syrus-countdown-colon {
+        display: none;
+    }
+
+    .syrus-page .syrus-countdown-card {
+        width: 85px;
+        height: 95px;
+    }
+
+    .syrus-page .syrus-time-num {
+        font-size: 2rem;
+    }
+
+    .syrus-page .syrus-cta-box {
+        padding: 2.2rem 1.2rem;
+    }
+}
