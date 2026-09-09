@@ -96,7 +96,6 @@ function Syrus() {
                 <header className="syrus-coming-soon-nav">
                     <a href="/" className="syrus-nav-brand">
                         <img src={CodecellLogo} alt="CodeCell Logo" className="syrus-nav-logo" />
-                        <span className="syrus-nav-title">CodeCell++</span>
                     </a>
 
                     <div className="syrus-nav-links">
