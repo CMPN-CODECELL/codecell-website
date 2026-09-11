@@ -122,7 +122,7 @@
     "event-desc": "The session covered Git and GitHub fundamentals, including repositories, branches, pull requests, and concurrency, while demonstrating how GitHub Copilot enhances coding efficiency and is transforming workflows across the tech industry.",
     "event-time": "Aug 2025",
     "event-guest": "Dhanashree Chavan (Senior Enterprise Advocate @ GitHub"
-  }, 
+  },
   {
     "event-name": "DSA HeadStart",
     "event-image": "dsa-headstart.jpeg",
@@ -136,6 +136,33 @@
     "event-desc": "A hands-on session introducing students to open-source development and guiding them through the Google Summer of Code (GSoC) journey with insights from mentors and steps to start contributing to global projects.",
     "event-time": "Oct 2025",
     "event-guest": "Sanjay Sargam GSoC Mentor '25 | GSoC Contributor '24 @AnkiDroid"
+  },
+  {
+    "event-name": "Syrus Hackathon 2026",
+    "event-image": "syrus-26.jpg",
+    "event-desc": "Syrus 2026 brought together 638 innovators in a high-energy 36-hour hackathon, featuring Agentic AI and Open Innovation tracks aligned with UN SDGs. From autonomous AI systems to sustainable technology solutions, teams built impactful prototypes under expert mentorship.",
+    "event-time": "Mar 2026",
+    "event-guest": "Piyush Chugeja, Ajay Iyer, Vedant Pawar, Manasi Sharma, Sakshi Kirmathe, Rezinix Team"
+  },
+  {
+    "event-name": "Prompt2Product: Innovation Through Agentic AI Application",
+    "event-image": "prompt2product.png",
+    "event-desc": "An exclusive 2-day workshop for TE CMPN students on advanced prompt engineering and agentic AI application development. Participants built reasoning pipelines and secure autonomous agents using LangSmith, LlamaIndex, NotebookLM, and Pydantic AI across frontier models.",
+    "event-time": "June 2026",
+    "event-guest": "Poorvaja Joshi, Kushagra Kumar"
+  },
+  {
+    "event-name": "System Sphere: Designing Scalable Innovations",
+    "event-image": "system-sphere.png",
+    "event-desc": "An exclusive 2-day workshop for BE CMPN students on modern, scalable software architecture. Covered High-Level Design (HLD), caching strategies, load balancing, and distributed microservices with a focus on placement preparation for product-based roles.",
+    "event-time": "Jun 2026",
+    "event-guest": "Sahil Tanwani"
+  },
+  {
+    "event-name": "Cloud Workshop",
+    "event-image": "cloud-workshop.png",
+    "event-desc": "An intensive 2-day workshop on systems programming, parallel computing, and distributed architectures for TE CMPN students. Conducted using NJIT coursework, participants covered virtual machine setup, POSIX threads, MPI-based distributed systems, and concurrency debugging for MAANG system design interviews.",
+    "event-time": "Aug 2026",
+    "event-guest": "Prof. K. Mani, Prof. Shirish Kulkarni"
   }
-  
 ]
