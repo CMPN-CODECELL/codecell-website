@@ -92,7 +92,6 @@ html:has(.syrus-page) body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(10px);
     z-index: 10;
 }
 
@@ -108,8 +107,8 @@ html:has(.syrus-page) body::-webkit-scrollbar {
 }
 
 .syrus-page .syrus-nav-logo {
-    width: 38px;
-    height: 38px;
+    width: 95px;
+    height: 95px;
     object-fit: contain;
     filter: drop-shadow(0 0 8px rgba(246, 195, 28, 0.5));
 }
@@ -194,7 +193,7 @@ html:has(.syrus-page) body::-webkit-scrollbar {
 }
 
 .syrus-page .syrus-vesit-logo {
-    height: 32px;
+    height: 85px;
     object-fit: contain;
     opacity: 0.9;
 }
